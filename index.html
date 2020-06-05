@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title></title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1 class="text-center" id="what">Portfolio</h1>
+      <h2 class="text-center" id="who">Koji Ishii</h2>
+      <p id="when">Latest Update: 2020/ 6/ 5</p>
+    </header>
+    <nav>
+      <ul class="flex-between text-center">
+        <li @click="changeContent('carrer')">
+          <i class="material-icons">assignment_ind</i>
+          <p>Carrer / Skill</p>
+        </li>
+        <li @click="changeContent('work')">
+          <i class="material-icons">desktop_windows</i>
+          <p>Works</p>
+        </li>
+        <li @click="changeContent('contact')">
+          <i class="material-icons">question_answer</i>
+          <p>Contact / Recruit</p>
+        </li>
+      </ul>
+    </nav>
+    <div id="click-suggest">
+      <ul class="flex-between text-center"> 
+        <li>
+          <span class="material-icons">keyboard_arrow_up</span>
+        </li>
+        <li>
+          <span class="material-icons">keyboard_arrow_up</span>
+        </li>
+        <li>
+          <span class="material-icons">keyboard_arrow_up</span>
+        </li>
+      </ul>
+      <p class="text-center">Please click icon.</p>
+    </div>
+    <section id="main-contents">
+      <component :is="currentContent">
+       
+      </component>
+    </section>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
