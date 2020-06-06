@@ -29,14 +29,8 @@ Vue.component('carrer', {
             <td>職業訓練校でプログラミングを学ぶ</td>
           </tr>
         </table>
-        <aside id="modalContent">
-          <img @click="modalToggle()" src="img/nekoatsume.JPG" />
-          <div id="overlay" v-cloak v-if="showContent" @click="modalToggle">
-            <div id="overlay-content">
-              <img src="img/row-nekoatsume.JPG" />
-              <p class="text-center">猫が好き</p>
-            </div>
-          </div>
+        <aside>
+					<img src="img/nekoatsume.JPG" />
         </aside>
       </div>
     </div>
@@ -74,18 +68,6 @@ Vue.component('contact', {
       </div>
     </div>
     `
-})
-
-var modalWindow = new Vue({
-  el: '#modalContent',
-  data: {
-    showContent: false
-  },
-  methods: {
-    modalToggle: function() {
-      showContent = !showContent;
-    }
-  }
 })
 
 var content = new Vue({
