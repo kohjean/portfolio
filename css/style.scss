@@ -8,10 +8,11 @@ $main-color: #E9C46A;
   text-align: center;
 }
 
-.flex-between {
+.flex {
   display: flex;
-  justify-content: space-between;
 }
+
+
 // end CSS modules
 
 // base style CSS 
@@ -76,6 +77,9 @@ header {
 
 nav {
   padding: 2rem 0;
+  ul {
+    justify-content: space-between;
+  }
   li {
     font-size: 1.6rem;
     width: calc(100% / 3);
@@ -116,8 +120,17 @@ nav {
 }
 
 #click-suggest {
+  opacity: 0;
+  transition: 2s;
   li {
+    // position: relative;
     width: calc(100% / 3);
+    i {
+      transition: 1.2s;
+      transform: translateY(0);
+      // top: 0;
+      // left: 0;
+    }
   }
   p {
     color: #fff;
@@ -147,14 +160,21 @@ nav {
       flex-wrap: wrap;
     }
   }
+  .component>h1 {
+    
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: #264653;
+  }
   // for carrer
   
-  table {
+  dl {
     width: 70%;
     td:nth-child(2) {
       text-align: center;
     }
-    tr {
+    dt {
       border-bottom: 1px solid #264653;
     }
   }
