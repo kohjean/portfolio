@@ -76,6 +76,8 @@ header {
 }
 
 nav {
+  overflow-y: auto;
+  height: 140px;
   padding: 2rem 0;
   ul {
     justify-content: space-between;
