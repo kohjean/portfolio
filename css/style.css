@@ -118,17 +118,12 @@ nav li:first-child::after {
           font-feature-settings: 'liga';
 }
 
-#click-suggest {
-  opacity: 0;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
 #click-suggest li {
   width: calc(100% / 3);
 }
 
 #click-suggest li i {
+  opacity: 0;
   -webkit-transition: 2s;
   transition: 2s;
   -webkit-transform: translateY(0);
@@ -139,6 +134,9 @@ nav li:first-child::after {
   color: #fff;
   font-size: 2.4rem;
   letter-spacing: 3px;
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 #main-contents {

@@ -127,11 +127,11 @@ var content = new Vue({
 var contentNav = document.getElementById('content-nav');
 var suggest = document.getElementById('click-suggest');
 var icons = suggest.getElementsByClassName('material-icons');
-var timer, timer2;
+var timer;
 
 // for click suggest
 window.onload = function() {
-	suggest.style.opacity = 1;
+	$('#click-suggest p').css({ opacity: 1});
 	suggestMove();
 }
 
@@ -140,23 +140,9 @@ function suggestMove() {
 	timer = setTimeout( function() {
 		for (i=0; i<icons.length; i++) {
 			icons[i].style.transform = 'translateY(-32px)'; 
-			icons[i].style.opacity = 0; 
-		}
-		clearInterval(timer2);	
-		suggestClear();
-	}, 2000);
-}
-
-// 矢印を初期状態に
-function suggestClear() {
-	timer2 = setTimeout( function() {
-		for (i=0; i<icons.length; i++) {
 			icons[i].style.opacity = 1; 
-			icons[i].style.transform = 'translateY(0)'; 
 		}
-		clearInterval(timer);
-		suggestMove();
-	}, 1400);
+	}, 800);
 }
 
 // コンテンツクリック -> suggestを消してスクロールする
@@ -166,7 +152,6 @@ var position = rect.top;
 contentNav.onclick = function() {
 	suggest.remove();	
 	clearInterval(timer);
-	clearInterval(timer2);
 	$('html,body').animate({
 		scrollTop: position
 	}, 400);
