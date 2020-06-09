@@ -127,8 +127,8 @@ nav li:first-child::after {
 }
 
 #click-suggest li i {
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -137,12 +137,6 @@ nav li:first-child::after {
   color: #fff;
   font-size: 2.4rem;
   letter-spacing: 3px;
-}
-
-.move {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
 }
 
 #main-contents {

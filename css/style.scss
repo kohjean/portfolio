@@ -123,13 +123,10 @@ nav {
   opacity: 0;
   transition: 2s;
   li {
-    // position: relative;
     width: calc(100% / 3);
     i {
-      transition: 1.2s;
+      transition: 2s;
       transform: translateY(0);
-      // top: 0;
-      // left: 0;
     }
   }
   p {
@@ -139,10 +136,6 @@ nav {
   }
 }
 
-.move {
-  transition: 0.3s;
-  opacity: 0;
-}
 #main-contents {
   margin: 3rem 2rem 0;
   position: relative;

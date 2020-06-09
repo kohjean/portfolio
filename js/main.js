@@ -136,10 +136,10 @@ window.onload = function() {
 function suggestMove() {
 	timer = setTimeout( function() {
 		for (i=0; i<icons.length; i++) {
-			icons[i].style.transform = 'translateY(-30px)'; 
-			icons[i].classList.add('move');
-			console.log('kick');
+			icons[i].style.transform = 'translateY(-40px)'; 
+			icons[i].style.opacity = 0; 
 		}
+		clearInterval(timer2);	
 		suggestClear();
 	}, 2000);
 }
@@ -147,18 +147,17 @@ function suggestMove() {
 function suggestClear() {
 	timer2 = setTimeout( function() {
 		for (i=0; i<icons.length; i++) {
+			icons[i].style.opacity = 1; 
 			icons[i].style.transform = 'translateY(0)'; 
-			icons[i].classList.remove('move');
-			console.log('clear');
 		}
+		clearInterval(timer);
 		suggestMove();
-	}, 1000);
+	}, 1600);
 }
 
 contentNav.onclick = function() {
+	suggest.remove();	
 	clearInterval(timer);
 	clearInterval(timer2);	
-	suggest.remove();
-	
 }
 
