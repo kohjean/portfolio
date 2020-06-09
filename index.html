@@ -15,7 +15,10 @@
     <header>
       <h1 class="text-center" id="what">Portfolio</h1>
       <h2 class="text-center" id="who">Koji Ishii</h2>
-      <p id="when">Latest Update: 2020/ 6/ 9</p>
+      <p id="when">
+        <span class="text-wrap">Latest Update</span>
+        <span class="text-wrap">: 2020/ 6/ 9</span>
+      </p>
     </header>
     <nav id="content-nav">
       <ul class="flex text-center">
@@ -48,28 +51,9 @@
       <p class="text-center">Please click icon.</p>
     </div>
     <section id="main-contents">
-      <!-- <component :is="currentContent"> -->
-        <div id="works-component" class="component">
-          <h1 class="text-center">制作物</h1>
-          <div class="content-area">
-            <article>
-              <h1>Going Over CSS</h1>
-              <img src="img/og-image.jpeg" />
-              <h2>詳細情報</h2>
-              <p>ユーザーのGitHubリポジトリに置かれたCSSファイルを登録し、CDN経由で配布します。</p>
-              <p>公開されているWEBサイトに上書きする形でCSSを適用し、"落書き"をする感覚で作ったコードを共有できます。</p>
-              <p></p>
-              <p><a href="http://goingover.net">GoingOverCSS</a><small>PC環境向けです。</small></p>
-            </article>
-            <article>
-              <h1>リメンバー・カリキュレーター</h1>
-              <img src="img/remenber-calc.png" />
-              <p>ユーザー登録機能を持った計算機です</p>
-              <p><a href="https://github.com/kohjean/rememberCalclator">GitHub</a></p>
-            </article>
-          </div>
-        </div>
-      <!-- </component> -->
+      <component :is="currentContent">
+      
+      </component>
     </section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

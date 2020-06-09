@@ -75,10 +75,17 @@ header {
 
 #when {
   font-family: Bernard MT Condensed;
+  width: 30%;
+  margin-left: auto;
   text-align: right;
-  font-size: 1.6rem;
-  padding-right: 3rem;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-right: 2.4rem;
   color: #2A9D8F;
+}
+
+.text-wrap {
+  display: inline-block;
 }
 
 nav {
@@ -153,13 +160,7 @@ nav {
 #main-contents {
   margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
-
-  i {
-    color: #fff;
-    // top: 2rem;
-    // left: 10%;
-
-  }
+  color: #fff;
 
   &>div {
     width: 100%;

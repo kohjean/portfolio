@@ -1,6 +1,6 @@
 Vue.config.devtools = true;
 Vue.component('wait', {
-  template: "<i class='material-icons'>chat_bubble_outline</i>"
+   template: "<p>wainting ...</p>"
 })
 
 Vue.component('carrer', {
@@ -80,7 +80,31 @@ Vue.component('carrer', {
 
 Vue.component('work', {
   template: `
-	
+		<div id="works-component" class="component">
+			<h1 class="text-center">制作システム</h1>
+			<div class="content-area">
+				<article>
+					<h1>Going Over CSS</h1>
+					<img src="img/og-image.jpeg" />
+					<h2>詳細情報</h2>
+					<p>ユーザーのGitHubリポジトリに置かれたCSSファイルを登録し、CDN経由で配布します。</p>
+					<p>公開されているWEBサイトに上書きする形でCSSを書き換え、"落書き"感覚でコードを共有できます。</p>
+					<p>無論、元のサイトに影響はありません。書き換えはクライアント側でのみ起こります。</p>
+					<p></p>
+					<p><a href="http://goingover.net">GoingOverCSS</a></p>
+					<p>※PC環境向けです</p>
+				</article>
+				<article>
+					<h1>リメンバー・カリキュレーター</h1>
+					<img src="img/remenber-calc.png" />
+					<h2>詳細情報</h2>
+					<p>ユーザー登録機能を持った計算機です。</p>
+					<p>自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。</p>
+					<p>Ajax通信を勉強する用として作成しました。ページ遷移なくデータが追加されます。</p>
+					<p><a href="https://github.com/kohjean/rememberCalclator">GitHub/kohjean</a></p>
+				</article>
+			</div>
+		</div>
   `
 })
 
