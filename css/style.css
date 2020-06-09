@@ -140,16 +140,12 @@ nav li:first-child::after {
 }
 
 #main-contents {
-  margin: 3rem 2rem 0;
-  position: relative;
+  margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
 }
 
 #main-contents i {
   color: #fff;
-  position: absolute;
-  top: 2rem;
-  left: 10%;
 }
 
 #main-contents > div {
@@ -159,15 +155,21 @@ nav li:first-child::after {
 }
 
 #main-contents > div .content-area {
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+@media (min-width: 479px) {
+  #main-contents > div .content-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
 }
 
 #main-contents .component > h1 {
@@ -226,16 +228,38 @@ nav li:first-child::after {
   background-color: #eee;
 }
 
-#main-contents article {
+#main-contents #works-component article {
+  padding-bottom: 5rem;
+}
+
+#main-contents #works-component article h1 {
   text-align: center;
-  width: 50%;
 }
 
-#main-contents article img {
-  width: 70%;
+#main-contents #works-component article h2 {
+  margin: 1rem;
+  font-size: 1.8rem;
 }
 
-#main-contents article:last-child {
+#main-contents #works-component article p {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+#main-contents #works-component article img {
+  width: 100%;
+}
+
+@media (min-width: 479px) {
+  #main-contents #works-component article {
+    width: 50%;
+  }
+  #main-contents #works-component article img {
+    width: 80%;
+  }
+}
+
+#main-contents #works-component article:last-child {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;

@@ -1,4 +1,9 @@
 // @mixin 
+@mixin sm {
+  @media (min-width: 479px) {
+    @content;
+  }
+}
 
 $main-color: #E9C46A;
 
@@ -40,6 +45,7 @@ body {
   margin: 0;
   background-color: #264653E3;
 }
+
 // end base style CSS
 
 #container {
@@ -79,14 +85,17 @@ nav {
   overflow-y: auto;
   height: 140px;
   padding: 2rem 0;
+
   ul {
     justify-content: space-between;
   }
+
   li {
     font-size: 1.6rem;
     width: calc(100% / 3);
     position: relative;
     color: #fff;
+
     &:hover {
       cursor: pointer;
     }
@@ -124,12 +133,14 @@ nav {
 #click-suggest {
   li {
     width: calc(100% / 3);
+
     i {
       opacity: 0;
       transition: 2s;
       transform: translateY(0);
     }
   }
+
   p {
     color: #fff;
     font-size: 2.4rem;
@@ -140,52 +151,65 @@ nav {
 }
 
 #main-contents {
-  margin: 3rem 2rem 0;
-  position: relative;
+  margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
+
   i {
     color: #fff;
-    position: absolute;
-    top: 2rem;
-    left: 10%;
-    
+    // top: 2rem;
+    // left: 10%;
+
   }
+
   &>div {
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
+
     .content-area {
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      margin: 0 auto;
+      // text-align: center;
+
+      @include sm {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
     }
   }
+
   .component>h1 {
-    
+
     padding: 1.6rem;
     font-size: 1.6rem;
     font-weight: bolder;
     color: #264653;
   }
+
   // for carrer
-  
+
   dl {
     width: 70%;
+
     td:nth-child(2) {
       text-align: center;
     }
+
     dt {
       border-bottom: 1px solid #264653;
     }
   }
+
   aside {
     width: 30%;
+
     // background-color: #2A9D8F;
     img {
       width: 100%;
       border-radius: 10px;
     }
+
     #overlay {
       z-index: 99;
       position: fixed;
@@ -193,31 +217,56 @@ nav {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
+
       #overlay-content {
         z-index: 100;
         width: 64%;
+
         p {
           background-color: #eee;
         }
       }
     }
   }
+
   // end carrer
 
   // for works
-  article {
-    text-align: center;
-    width: 50%;
-    img {
-      width: 70%;
+  #works-component {
+    article {
+      padding-bottom: 5rem;
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        margin: 1rem;
+        font-size: 1.8rem;
+        // text-align: left;
+      }
+      p {
+        margin: 1rem;
+        font-size: 1.6rem;
+      }
+      img {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 50%;
+        img {
+          width: 80%;
+        }
+      }
+     
+      &:last-child {
+        justify-content: start;
+        ;
+      }
     }
-  &:last-child {
-    justify-content: start;;
-  }
-  // 
+    // 
   }
 }

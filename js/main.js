@@ -80,25 +80,7 @@ Vue.component('carrer', {
 
 Vue.component('work', {
   template: `
-		<div id="works-component" class="component">
-			<h1 class="text-center">制作物</h1>
-			<div class="content-area">
-				<article>
-					<h1>Going Over CSS</h1>
-					<p>CSSをGoingOverするサイトです。</p>
-					<img src="img/og-image.jpeg" />
-				</article>
-				<article>
-					<h1>リメンバー・カリキュレーター</h1>
-					<p>ユーザー登録機能を持った計算機です</p>
-					<img src="img/remenber-calc.png" />
-					<p><a href="https://github.com/kohjean/rememberCalclator">GitHubリポジトリ</a></p>
-				</article>
-				<article>
-					<h1>アニマル・ウェルフェアOSS</h1>
-				</article>
-			</div>
-		</div>
+	
   `
 })
 
@@ -139,7 +121,7 @@ window.onload = function() {
 function suggestMove() {
 	timer = setTimeout( function() {
 		for (i=0; i<icons.length; i++) {
-			icons[i].style.transform = 'translateY(-32px)'; 
+			icons[i].style.transform = 'translateY(-3rem)'; 
 			icons[i].style.opacity = 1; 
 		}
 	}, 800);
@@ -154,7 +136,7 @@ contentNav.onclick = function() {
 	clearInterval(timer);
 	$('html,body').animate({
 		scrollTop: position
-	}, 400);
+	}, 500, 'swing');
 }
 
 // end click suggest
