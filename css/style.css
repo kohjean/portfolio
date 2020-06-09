@@ -158,7 +158,7 @@ nav li:first-child::after {
   margin: 0 auto;
 }
 
-@media (min-width: 374px) {
+@media (min-width: 479px) {
   #main-contents > div .content-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,7 +250,7 @@ nav li:first-child::after {
   width: 100%;
 }
 
-@media (min-width: 374px) {
+@media (min-width: 479px) {
   #main-contents #works-component article {
     width: 50%;
   }
