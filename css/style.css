@@ -149,7 +149,6 @@ nav li:first-child::after {
 #main-contents {
   margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
-  color: #fff;
 }
 
 #main-contents > div {
