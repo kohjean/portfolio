@@ -8,7 +8,7 @@ Vue.component('carrer', {
 		<div id="carrer-component" class="component">
 			<h1 class="text-center">経歴 / スキル</h1>
 			<div class="content-area">
-				<div id="carrer-table">
+				<div id="carrer-header">
 					<table>
 						<tr>
 							<th>年</th>
@@ -84,8 +84,10 @@ Vue.component('work', {
 			<h1 class="text-center">制作システム</h1>
 			<div class="content-area">
 				<article>
-					<h1>Going Over CSS</h1>
-					<img src="img/og-image.jpeg" />
+					<div class="text-center">
+						<h1>Going Over CSS</h1>
+						<img src="img/og-image.jpeg" />
+					</div>
 					<h2>詳細情報</h2>
 					<p>ユーザーのGitHubリポジトリに置かれたCSSファイルを登録し、CDN経由で配布します。</p>
 					<p>公開されているWEBサイトに上書きする形でCSSを書き換え、"落書き"感覚でコードを共有できます。</p>
@@ -95,8 +97,10 @@ Vue.component('work', {
 					<p>※PC環境向けです</p>
 				</article>
 				<article>
-					<h1>リメンバー・カリキュレーター</h1>
-					<img src="img/remenber-calc.png" />
+					<div class="text-center">
+						<h1>リメンバー・カリキュレーター</h1>
+						<img src="img/remenber-calc.png" />
+					</div>
 					<h2>詳細情報</h2>
 					<p>ユーザー登録機能を持った計算機です。</p>
 					<p>自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。</p>
@@ -118,7 +122,7 @@ Vue.component('contact', {
   `
 })
 
-var content = new Vue({
+const content = new Vue({
   el: '#container',
   data: {
     currentContent: 'wait',
@@ -130,10 +134,10 @@ var content = new Vue({
   }
 })
 
-var contentNav = document.getElementById('content-nav');
-var suggest = document.getElementById('click-suggest');
-var icons = suggest.getElementsByClassName('material-icons');
-var timer;
+const contentNav = document.getElementById('content-nav');
+const suggest = document.getElementById('click-suggest');
+const icons = suggest.getElementsByClassName('material-icons');
+let timer;
 
 // for click suggest
 window.onload = function() {
@@ -152,8 +156,8 @@ function suggestMove() {
 }
 
 // コンテンツクリック -> suggestを消してスクロールする
-var rect = suggest.getBoundingClientRect();
-var position = rect.top;
+const rect = suggest.getBoundingClientRect();
+const position = rect.top;
 
 contentNav.onclick = function() {
 	suggest.remove();	
