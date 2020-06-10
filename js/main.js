@@ -101,12 +101,16 @@ contentNav.onclick = function() {
 // end click suggest
 
 //  for chart
-const ctx = document.getElementById('skill-chart');
-const myLineChart = new Chart(ctx, {
+const chartConfig = {
 	type: 'pie',
 	data: {
 		labels: ['CSS', 'JS', 'PHP', 'HTML', 'Others'],
 		position: 'right',
+		animation: {
+			onProgress: function(animation) {
+					progress.value = animation.animationObject.currentStep / animation.animationObject.numSteps;
+			}
+		},
 		boxWidth: 10,
 		datasets: [{
 			backgroundColor: [
@@ -132,5 +136,10 @@ const myLineChart = new Chart(ctx, {
 			position: 'top',
 		}
 	}
+}
+
+$('#skill-chart').on('inview', function() {
+	const ctx = document.getElementById('skill-chart');
+	const myChart = new Chart(ctx, chartConfig);
 });
 // 
