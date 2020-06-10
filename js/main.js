@@ -5,76 +5,7 @@ Vue.component('wait', {
 
 Vue.component('carrer', {
   template: `
-		<div id="carrer-component" class="component">
-			<h1 class="text-center">経歴 / スキル</h1>
-			<div class="content-area">
-				<div id="carrer-header">
-					<table>
-						<tr>
-							<th>年</th>
-							<th>月</th>
-							<th>職歴・学歴</th>
-						</tr>
-						<tr>
-							<td>2016</td>
-							<td>3</td>
-							<td>龍谷大学経済学部卒業</td>
-						</tr>
-						<tr>
-							<td>2016</td>
-							<td>4</td>
-							<td>京都市内の社会福祉法人にて3年半勤務</td>
-						</tr>
-						<tr>
-							<td>2019</td>
-							<td>10</td>
-							<td>職業訓練校でプログラミングを学ぶ</td>
-						</tr>
-					</table>
-					<aside>
-						<img src="img/nekoatsume.JPG" />
-					</aside>
-				</div>
-				<div id="skillset">
-					<h2>フロントサイド</h2>
-					<dl>
-						<dt>HTML5 & CSS3</dt>
-						<dd>開発歴：<span>2019/ 4 ~</span></dd>
-						<dd></dd>
-						<dd>コーディングはセマンティクスを意識しつつ、見易さを重視。</dd>
-						<dd>レスポンシブデザインできます。</dd>
-						<dd>半年ほど前からはSCSSを使用。Bootstrap4も多少使用経験あり。</dd>
-						<dt>JavaScript</dt>
-						<dd>開発歴：<span>2019/ 4 ~</span></dd>
-						<dd>学習初期からjQueryを使用。バニラjsはあまり触っていない。</dd>
-						<dd>jQueryと併用する形でVue.jsも学習中。</dd>
-						<dd>コンソール画面が好き。</dd>
-					</dl>
-					<h2>サーバサイド</h2>
-					<dl>
-						<dt>PHP7</dt>
-						<dd>開発歴：<span>2019/ 12 ~</span></dd>
-						<dd>一番得意(≒好き)な言語。</dd>
-						<dd>データベースドリブンWebサイトが作れる。</dd>
-						<dd>セキュリティに配慮した実装を心掛け、不安があれば検証する。</dd>
-						<dt>MySQL</dt>
-						<dd>開発歴：<span>2019/ 12 ~</span></dd>
-					</dl>
-					<h2>開発ツール等</h2>
-					<dl>
-						<dt>Git</dt>
-						<dd>基本的な使い方は理解している。CLIで使用。</dd>
-						<dt>bash</dt>
-						<dd>基本的なコマンドは使える。オプションは不自由。</dd>
-						<dd>間違っても<code>rm -rf /</code>やその変形を実行する事はない。</dd>
-						<dt>Linux</dt>
-						<dd>教材に沿ってUbuntu環境でVagrantを使った開発経験あり。CircleCI, Node.jsに触れた。</dd>
-						<dt>Vim</dt>
-						<dd><code>vimtutor</code>3章まで学習。</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
+		
   `
 })
 
@@ -169,3 +100,37 @@ contentNav.onclick = function() {
 
 // end click suggest
 
+//  for chart
+const ctx = document.getElementById('skill-chart');
+const myLineChart = new Chart(ctx, {
+	type: 'pie',
+	data: {
+		labels: ['CSS', 'JS', 'PHP', 'HTML', 'Others'],
+		position: 'right',
+		boxWidth: 10,
+		datasets: [{
+			backgroundColor: [
+				"#e76f51",
+				"#f4a261",
+				"#e9c46a",
+				"#2a9d8f",
+				"#264653"
+			],
+			data: [25, 20, 20, 15, 20],
+		}]
+	},
+	options:{
+		legend: {
+			position: 'right',
+			labels: {
+				boxWidth: 16,
+			},
+		},
+		title: {
+			display: true,
+			text: '学習時間の割合',
+			position: 'top',
+		}
+	}
+});
+// 

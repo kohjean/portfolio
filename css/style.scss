@@ -185,7 +185,7 @@ nav {
     color: #264653;
   }
 
-  // for carrer
+  // for carrer =======================================================
   #carrer-component {
     #carrer-header {
       @include sm {
@@ -204,6 +204,13 @@ nav {
         border-bottom: 1px solid #264653;
       }
     }
+// ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥
+    @include sm {
+      #skill-graph {
+        position: relative;
+        // width: 50%;
+      }
+    }
 
     aside {
       img {
@@ -216,33 +223,33 @@ nav {
           border-radius: 10px;
         }
        }
+      
+      // #overlay {
+      //   z-index: 99;
+      //   position: fixed;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: rgba(0, 0, 0, 0.5);
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
 
-      #overlay {
-        z-index: 99;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      //   #overlay-content {
+      //     z-index: 100;
+      //     width: 64%;
 
-        #overlay-content {
-          z-index: 100;
-          width: 64%;
-
-          p {
-            background-color: #eee;
-          }
-        }
-      }
+      //     p {
+      //       background-color: #eee;
+      //     }
+      //   }
+      // }
     }
   }
-  // end carrer
+  // end carrer _______________________________________________________
 
-  // for works
+  // for works ========================================================
   #works-component {
     article {
       padding-bottom: 5rem;
