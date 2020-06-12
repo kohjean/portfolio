@@ -10,13 +10,5 @@ const SASS_AUTO_IMPORTS = `
 module.exports = {
   presets: [
     '@vue/cli-plugin-babel/preset'
-  ],
-  css: {
-    loaderOptions: {
-      sass: {
-        data: SASS_AUTO_IMPORTS,
-        includePaths: ['./node_modules'],
-      },
-    },
-  },
+  ]
 }

@@ -51,13 +51,31 @@ import ContentCarrer from './components/ContentCarrer.vue'
 export default {
   name: 'App',
   components: {
-    ContentCarrer
-  }
+    ContentCarrer,
+  },
+  data: function() {
+    return {
+      currentContent: 'wait',
+    }
+	},
+	created: function() {
+    // const carrer = document.getElementById('carrer');
+		// carrer.addEventListner('click', function() {})
+	},
+	methods: {
+		changeContent: function(content) {
+			this.currentContent = content;
+		},
+	}
 }
+
+
+
 </script>
 
-<style lang="scss" scope>
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+<style lang="scss">
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "./assets/css/main";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -66,4 +84,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

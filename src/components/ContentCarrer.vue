@@ -30,9 +30,9 @@
         </aside>
       </div>
       <div id="skill-graph">
-        <line-chart id="skill-chart">
+        <Chart id="skill-chart">
 
-        </line-chart>
+        </Chart>
       </div>
       <div id="skillset">
         <h2>フロントサイド</h2>
@@ -77,8 +77,12 @@
 </template>
 
 <script>
+import Chart from './Chart.vue'
 export default {
-  
+  name: 'ContentCarrer',
+  components: {
+    Chart
+  }
 }
 </script>
 
