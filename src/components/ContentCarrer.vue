@@ -30,7 +30,7 @@
         </aside>
       </div>
       <div id="skill-graph">
-        <Chart id="skill-chart">
+        <Chart>
 
         </Chart>
       </div>
@@ -77,15 +77,85 @@
 </template>
 
 <script>
-import Chart from './Chart.vue'
-export default {
-  name: 'ContentCarrer',
-  components: {
-    Chart
+  import Chart from './Chart.vue'
+  export default {
+    // name: 'ContentCarrer',
+    components: {
+      Chart
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>
+  #carrer-header {
+    @include sm {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 
+  dl {
+    width: 100%;
+
+    td:nth-child(2) {
+      text-align: center;
+    }
+
+    dt {
+      border-bottom: 1px solid #264653;
+    }
+  }
+
+  // ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥
+  #skill-graph {
+    width: 100%;
+
+    @include sm {
+      display: block;
+      // position: relative;
+      width: 100%;
+      margin: 0 auto;
+
+      canvas {
+        max-width: 480px;
+      }
+    }
+  }
+
+  aside {
+    img {
+      width: 100%;
+    }
+
+    @include sm {
+      width: 30%;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    // #overlay {
+    //   z-index: 99;
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba(0, 0, 0, 0.5);
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+
+    //   #overlay-content {
+    //     z-index: 100;
+    //     width: 64%;
+
+    //     p {
+    //       background-color: #eee;
+    //     }
+    //   }
+    // }
+  }
 </style>

@@ -28,6 +28,9 @@ li {
 body {
   margin: 0;
   background-color: #264653E3;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #container {
@@ -119,24 +122,6 @@ nav li:first-child::after {
   font-feature-settings: 'liga';
 }
 
-#click-suggest li {
-  width: calc(100% / 3);
-}
-
-#click-suggest li i {
-  opacity: 0;
-  transition: 2s;
-  transform: translateY(0);
-}
-
-#click-suggest p {
-  color: #fff;
-  font-size: 2.4rem;
-  letter-spacing: 3px;
-  opacity: 0;
-  transition: 2s;
-}
-
 #main-contents {
   margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
@@ -166,88 +151,5 @@ nav li:first-child::after {
   font-size: 1.6rem;
   font-weight: bolder;
   color: #264653;
-}
-
-@media (min-width: 479px) {
-  #main-contents #carrer-component #carrer-header {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-#main-contents #carrer-component dl {
-  width: 100%;
-}
-
-#main-contents #carrer-component dl td:nth-child(2) {
-  text-align: center;
-}
-
-#main-contents #carrer-component dl dt {
-  border-bottom: 1px solid #264653;
-}
-
-#main-contents #carrer-component #skill-graph {
-  width: 100%;
-}
-
-@media (min-width: 479px) {
-  #main-contents #carrer-component #skill-graph {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
-  #main-contents #carrer-component #skill-graph canvas {
-    max-width: 480px;
-  }
-}
-
-#main-contents #carrer-component aside img {
-  width: 100%;
-}
-
-@media (min-width: 479px) {
-  #main-contents #carrer-component aside {
-    width: 30%;
-  }
-  #main-contents #carrer-component aside img {
-    width: 100%;
-    border-radius: 10px;
-  }
-}
-
-#main-contents #works-component article {
-  padding-bottom: 5rem;
-}
-
-#main-contents #works-component article h1 {
-  text-align: center;
-}
-
-#main-contents #works-component article h2 {
-  margin: 1rem;
-  font-size: 1.8rem;
-}
-
-#main-contents #works-component article p {
-  margin: 1rem;
-  font-size: 1.6rem;
-}
-
-#main-contents #works-component article img {
-  width: 100%;
-}
-
-@media (min-width: 479px) {
-  #main-contents #works-component article {
-    width: 50%;
-  }
-  #main-contents #works-component article img {
-    width: 80%;
-  }
-}
-
-#main-contents #works-component article:last-child {
-  justify-content: start;
 }
 /*# sourceMappingURL=main.css.map */

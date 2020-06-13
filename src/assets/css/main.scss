@@ -1,4 +1,3 @@
-// @mixin 
 @mixin sm {
   @media (min-width: 479px) {
     @content;
@@ -9,6 +8,7 @@ $main-color: #E9C46A;
 
 // end @mixin
 // CSS modules
+
 .text-center {
   text-align: center;
 }
@@ -44,6 +44,9 @@ li {
 body {
   margin: 0;
   background-color: #264653E3;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // end base style CSS
@@ -137,25 +140,6 @@ nav {
   font-feature-settings: 'liga';
 }
 
-#click-suggest {
-  li {
-    width: calc(100% / 3);
-
-    i {
-      opacity: 0;
-      transition: 2s;
-      transform: translateY(0);
-    }
-  }
-
-  p {
-    color: #fff;
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-    opacity: 0;
-    transition: 2s;
-  }
-}
 
 #main-contents {
   margin: 3rem 2rem 3rem;
@@ -184,108 +168,6 @@ nav {
     color: #264653;
   }
 
-  // for carrer =======================================================
-  #carrer-component {
-    #carrer-header {
-      @include sm {
-        display: flex;
-        justify-content: space-around;
-      }
-    }
-    dl {
-      width: 100%;
-
-      td:nth-child(2) {
-        text-align: center;
-      }
-
-      dt {
-        border-bottom: 1px solid #264653;
-      }
-    }
-// ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥
-    #skill-graph {
-      width: 100%;
-      @include sm {
-        display: block;
-        // position: relative;
-        width: 100%;
-        margin: 0 auto;
-        canvas {
-          max-width: 480px;
-        }
-      }
-    }
-
-    aside {
-      img {
-        width: 100%;
-      }
-      @include sm {
-        width: 30%;
-        img {
-          width: 100%;
-          border-radius: 10px;
-        }
-       }
-      
-      // #overlay {
-      //   z-index: 99;
-      //   position: fixed;
-      //   top: 0;
-      //   left: 0;
-      //   width: 100%;
-      //   height: 100%;
-      //   background-color: rgba(0, 0, 0, 0.5);
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-
-      //   #overlay-content {
-      //     z-index: 100;
-      //     width: 64%;
-
-      //     p {
-      //       background-color: #eee;
-      //     }
-      //   }
-      // }
-    }
-  }
-  // end carrer _______________________________________________________
-
   // for works ========================================================
-  #works-component {
-    article {
-      padding-bottom: 5rem;
-      h1 {
-        text-align: center;
-      }
-      h2 {
-        margin: 1rem;
-        font-size: 1.8rem;
-        // text-align: left;
-      }
-      p {
-        margin: 1rem;
-        font-size: 1.6rem;
-      }
-      img {
-        width: 100%;
-      }
-
-      @include sm {
-        width: 50%;
-        img {
-          width: 80%;
-
-        }
-      }
-     
-      &:last-child {
-        justify-content: start;
-        ;
-      }
-    }
-  }
+  
 }
