@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-
-// import vuetify from './plugins/vuetify.js'
-
-Vue.config.productionTip = false
+import smoothScroll from 'vue-smoothscroll'
+Vue.use(smoothScroll)
 
 new Vue({
-  // vuetify,
   render: h => h(App),
 }).$mount('#app')
+

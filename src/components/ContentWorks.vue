@@ -63,7 +63,6 @@ article {
    
     &:last-child {
       justify-content: start;
-      ;
     }
   }
 </style>

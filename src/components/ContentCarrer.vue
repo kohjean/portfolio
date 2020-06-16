@@ -30,9 +30,9 @@
         </aside>
       </div>
       <div id="skill-graph">
-        <Chart>
+        <SkillChart>
 
-        </Chart>
+        </SkillChart>
       </div>
       <div id="skillset">
         <h2>フロントサイド</h2>
@@ -77,11 +77,15 @@
 </template>
 
 <script>
-  import Chart from './Chart.vue'
+  import SkillChart from './SkillChart'
   export default {
-    // name: 'ContentCarrer',
+    name: 'ContentCarrer',
+    data() {
+      return {
+      }
+    },
     components: {
-      Chart
+      SkillChart
     }
   }
 </script>
@@ -108,17 +112,16 @@
 
   // ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥
   #skill-graph {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 
     @include sm {
       display: block;
       // position: relative;
       width: 100%;
-      margin: 0 auto;
+      // margin: 0 auto;
 
-      canvas {
-        max-width: 480px;
-      }
+      max-width: 480px;
     }
   }
 

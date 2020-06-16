@@ -1,13 +1,4 @@
-@mixin sm {
-  @media (min-width: 479px) {
-    @content;
-  }
-}
-
 $main-color: #E9C46A;
-
-// end @mixin
-// CSS modules
 
 .text-center {
   text-align: center;
@@ -16,9 +7,6 @@ $main-color: #E9C46A;
 .flex {
   display: flex;
 }
-
-
-// end CSS modules
 
 // base style CSS 
 * {
@@ -91,43 +79,6 @@ header {
   display: inline-block;
 }
 
-nav {
-  overflow-y: auto;
-  height: 140px;
-  padding: 2rem 0;
-
-  ul {
-    justify-content: space-between;
-  }
-
-  li {
-    font-size: 1.6rem;
-    width: calc(100% / 3);
-    position: relative;
-    color: #fff;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 1rem;
-      left: 0;
-      height: 80%;
-      width: 2px;
-      color: $main-color;
-      background-color: $main-color;
-    }
-
-    &:first-child::after {
-      display: none;
-    }
-  }
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-size: 7rem;
@@ -167,7 +118,4 @@ nav {
     font-weight: bolder;
     color: #264653;
   }
-
-  // for works ========================================================
-  
 }

@@ -8,25 +8,12 @@
         <span class="text-wrap">: {{ latestDay }}</span>
       </p>
     </header>
-    <nav id="content-nav">
-      <ul class="flex text-center">
-        <li @click="changeContent('Carrer')">
-          <i class="material-icons">assignment_ind</i>
-          <p>Carrer / Skill</p>
-        </li>
-        <li @click="changeContent('Works')">
-          <i class="material-icons">desktop_windows</i>
-          <p>Works</p>
-        </li>
-        <li @click="changeContent('Contact')">
-          <i class="material-icons">question_answer</i>
-          <p>Contact / Recruit</p>
-        </li>
-      </ul>
-    </nav>
-    <transition name="fade">
-      <ContentsSuggest v-if="show"></ContentsSuggest>
-    </transition>
+    <ContentsNav v-on:change-content="changeContent"></ContentsNav>
+
+    <section id="suggest-section">
+      <ContentsSuggest v-show="suggestShow"></ContentsSuggest>
+    </section>
+
     <section id="main-contents">
       <component :is="currentContent"></component>
     </section>
@@ -35,53 +22,51 @@
 </template>
 
 <script>
-  import ContentsSuggest from './components/ContentsSuggest.vue'
-  import Wait from './components/ContentWait.vue'
-  import Carrer from './components/ContentCarrer.vue'
-  import Works from './components/ContentWorks.vue'
-  import Contact from './components/ContentContact.vue'
+  import ContentsNav from './components/TheContentNav'
+  import ContentsSuggest from './components/ContentsSuggest'
+  import Wait from './components/ContentWait'
+  import Carrer from './components/ContentCarrer'
+  import Works from './components/ContentWorks'
+  import Contact from './components/ContentContact'
   export default {
     name: 'App',
     components: {
+      ContentsNav,
       ContentsSuggest,
       Wait,
       Carrer,
       Works,
       Contact
     },
-    data: function() {
+    data() {
       return {
-        latestDay: '2020 / 6/ 14',
+        latestDay: '2020 / 6/ 15',
         currentContent: 'Wait',
-        show: false
+        suggestShow: false,
       }
     },
-    created: function() {
+    created() {
       addEventListener('load', this.showSuggest);
-      addEventListener('load', this.suggestMove);
-      // const carrer = document.getElementById('carrer');
-      // carrer.addEventListner('click', function() {})
     },
     methods: {
       showSuggest: function() {
-        this.show = true
+        this.suggestShow = true
       },
       changeContent: function(content) {
         this.currentContent = content;
+        this.suggestShow = false;
+        this.clickSmoothScroll();
       },
-      suggestMove: function() {
-        const suggest = document.getElementById('suggestIcons');
-        const icons = suggest.getElementsByClassName('material-icons');
-        // let timer;
-        setTimeout(function() {
-          for (let i = 0; i < icons.length; i++) {
-            icons[i].style.transform = 'translateY(-3rem)';
-            icons[i].style.opacity = 1;
-          }
-        }, 800);
+      clickSmoothScroll: function() {
+        event.preventDefault()
+        this.$SmoothScroll(
+          document.querySelector('#suggest-section'),
+          800
+        );
       }
     }
   }
+
 </script>
 
 <style lang="scss">
