@@ -100,15 +100,6 @@ header {
     background-color: #f5f5f5;
     border-radius: 10px;
 
-    .content-area {
-      margin: 0 auto;
-      @include sm {
-        // display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        // padding: 1rem;
-      }
-    }
   }
 
   .component>h1 {
