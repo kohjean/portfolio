@@ -26,13 +26,15 @@
           </tr>
         </table>
         <aside>
-          <img src="img/nekoatsume.JPG" />
+          <figure>
+            <img src="img/nekoatsume.JPG" alt="私が酒蔵の縁側に座っている写真です。周りにphotoshopで合成した猫がたくさんいます。" />
+            <figcaption>I like Neko.</figcaption>
+          </figure>
         </aside>
       </div>
-      <div id="skill-graph">
-        <SkillChart>
-
-        </SkillChart>
+      <div id="charts">
+        <RadarChart class="skill-graph" />
+        <PieChart class="skill-graph" />
       </div>
       <div id="skillset">
         <h2>フロントサイド</h2>
@@ -77,7 +79,8 @@
 </template>
 
 <script>
-  import SkillChart from './SkillChart'
+  import RadarChart from './RadarChart'
+  import PieChart from './PieChart'
   export default {
     name: 'ContentCarrer',
     data() {
@@ -85,80 +88,100 @@
       }
     },
     components: {
-      SkillChart
+      RadarChart,
+      PieChart
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  #carrer-header {
-    @include sm {
-      display: flex;
-      justify-content: space-around;
-    }
+
+#carrer-header {
+  @include sm {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+dl {
+  width: 100%;
+
+  td:nth-child(2) {
+    text-align: center;
   }
 
-  dl {
-    width: 100%;
-
-    td:nth-child(2) {
-      text-align: center;
-    }
-
-    dt {
-      border-bottom: 1px solid #264653;
-    }
+  dt {
+    border-bottom: 1px solid #264653;
   }
+}
 
-  // ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥
-  #skill-graph {
-    width: 80%;
+#charts {
+  @include md {
+    display: flex;
+  }
+}
+
+.skill-graph {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+
+  @include sm {
+    display: block;
+    width: 50%;
+    max-width: 480px;
     margin: 0 auto;
-
-    @include sm {
-      display: block;
-      // position: relative;
-      width: 100%;
-      // margin: 0 auto;
-
-      max-width: 480px;
-    }
   }
+  @include md {
+    width: 40%;
+    
+  }
+}
 
-  aside {
+aside {
+  img {
+    width: 100%;
+  }
+  figcaption {
+    font-size: 12px;
+    text-align: center;
+  }
+  @include sm {
+    width: 30%;
+
     img {
       width: 100%;
+      border-radius: 10px;
     }
-
-    @include sm {
-      width: 30%;
-
-      img {
-        width: 100%;
-        border-radius: 10px;
-      }
-    }
-
-    // #overlay {
-    //   z-index: 99;
-    //   position: fixed;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-color: rgba(0, 0, 0, 0.5);
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-
-    //   #overlay-content {
-    //     z-index: 100;
-    //     width: 64%;
-
-    //     p {
-    //       background-color: #eee;
-    //     }
-    //   }
-    // }
   }
+}
+
+.content-area>div {
+  margin-bottom: 5rem;
+}
+
+.content-area>div:nth-child(2n) {
+  background-color: #e3e3e3;
+}
+  // #overlay {
+  //   z-index: 99;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+
+  //   #overlay-content {
+  //     z-index: 100;
+  //     width: 64%;
+
+  //     p {
+  //       background-color: #eee;
+  //     }
+  //   }
+  // }
 </style>

@@ -103,10 +103,10 @@ header {
     .content-area {
       margin: 0 auto;
       @include sm {
-        display: flex;
+        // display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 1rem;
+        // padding: 1rem;
       }
     }
   }

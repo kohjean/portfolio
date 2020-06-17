@@ -35,32 +35,50 @@
   }
 </script>
 <style lang="scss" scoped>
-article {
+  .content-area {
+    margin: 0 auto;
+
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      // padding: 1rem;
+    }
+  }
+
+  article {
     padding-bottom: 5rem;
+
     h1 {
       text-align: center;
     }
+
     h2 {
+      padding: 0 2rem;
       margin: 1rem;
       font-size: 1.8rem;
       // text-align: left;
     }
+
     p {
       margin: 1rem;
+      padding: 0 2rem;
       font-size: 1.6rem;
     }
+
     img {
       width: 100%;
     }
 
     @include sm {
       width: 50%;
+
       img {
         width: 80%;
 
       }
     }
-   
+
     &:last-child {
       justify-content: start;
     }
