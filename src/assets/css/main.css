@@ -73,43 +73,6 @@ header {
   display: inline-block;
 }
 
-nav {
-  overflow-y: auto;
-  height: 140px;
-  padding: 2rem 0;
-}
-
-nav ul {
-  justify-content: space-between;
-}
-
-nav li {
-  font-size: 1.6rem;
-  width: calc(100% / 3);
-  position: relative;
-  color: #fff;
-}
-
-nav li:hover {
-  cursor: pointer;
-}
-
-nav li::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  height: 80%;
-  width: 2px;
-  color: #E9C46A;
-  background-color: #E9C46A;
-}
-
-nav li:first-child::after {
-  display: none;
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-size: 7rem;
@@ -131,19 +94,6 @@ nav li:first-child::after {
   width: 100%;
   background-color: #f5f5f5;
   border-radius: 10px;
-}
-
-#main-contents > div .content-area {
-  margin: 0 auto;
-}
-
-@media (min-width: 479px) {
-  #main-contents > div .content-area {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-  }
 }
 
 #main-contents .component > h1 {
