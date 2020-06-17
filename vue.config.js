@@ -1,4 +1,7 @@
 module.exports = {
+  publicPath: './',
+  outputDir: 'docs/', 
+  
   css: {
     loaderOptions: {
       sass: { 
@@ -9,7 +12,4 @@ module.exports = {
       }
     }
   },
-  "transpileDependencies": [
-    "vuetify"
-  ]
 }
