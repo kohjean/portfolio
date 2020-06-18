@@ -1,7 +1,7 @@
 <template>
-  <div id="contact-component" class="component">
+  <div id="contact-component" class="component">     
+    <h1>コンタクト</h1>
     <div class="content-area">
-      <h3>コンタクト</h3>
     </div>
   </div>
 </template>
@@ -10,4 +10,4 @@
     
   }
 </script>
-<style scoped></style>
+<style lang="scss" scoped></style>

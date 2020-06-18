@@ -29,6 +29,10 @@ li {
   list-style: none;
 }
 
+a {
+  color: #2280fa;
+}
+
 body {
   margin: 0;
   background-color: #264653E3;
@@ -101,8 +105,12 @@ header {
     border-radius: 10px;
   }
 
+  .content-area {
+    padding-bottom: 3rem;
+  }
+  
   .component>h1 {
-
+    text-align: center;
     padding: 1.6rem;
     font-size: 1.6rem;
     font-weight: bolder;
