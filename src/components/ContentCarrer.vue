@@ -1,6 +1,6 @@
 <template>
   <div id="carrer-component" class="component">
-    <h1 class="text-center">経歴 / スキル</h1>
+    <h1>経歴 / スキル</h1>
     <div class="content-area">
       <div id="carrer-header">
         <table>
@@ -36,42 +36,63 @@
         <RadarChart class="skill-graph" />
         <PieChart class="skill-graph" />
       </div>
-      <div id="skillset">
+      <div id="skill-set">
         <h2>フロントサイド</h2>
+        <div class="devIcons">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
         <dl>
           <dt>HTML5 & CSS3</dt>
           <dd>開発歴：<span>2019/ 4 ~</span></dd>
           <dd></dd>
-          <dd>コーディングはセマンティクスを意識しつつ、見易さを重視。</dd>
+          <dd>セマンティクスを意識してコーディングしてます。</dd>
           <dd>レスポンシブデザインできます。</dd>
           <dd>半年ほど前からはSCSSを使用。Bootstrap4も多少使用経験あり。</dd>
           <dt>JavaScript</dt>
           <dd>開発歴：<span>2019/ 4 ~</span></dd>
-          <dd>学習初期からjQueryを使用。バニラjsはあまり触っていない。</dd>
-          <dd>jQueryと併用する形でVue.jsも学習中。</dd>
+          <dd>学習初期からバニラjsとjQueryを併用しながら使用。</dd>
+          <dd>jQueryのajax通信で非同期処理を実装することができます。
           <dd>コンソール画面が好き。</dd>
         </dl>
         <h2>サーバサイド</h2>
+        <div class="devIcons">
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-mysql-plain-wordmark colored"></i>
+        </div>
         <dl>
           <dt>PHP7</dt>
           <dd>開発歴：<span>2019/ 12 ~</span></dd>
-          <dd>一番得意(≒好き)な言語。</dd>
-          <dd>データベースドリブンWebサイトが作れる。</dd>
-          <dd>セキュリティに配慮した実装を心掛け、不安があれば検証する。</dd>
+          <dd>開発環境にはMAMPを使用しています。</dd>
+          <dd>ログイン認証機能が作れます。</dd>
+          <dd>画像のアップロード機能が作れます。</dd>
           <dt>MySQL</dt>
           <dd>開発歴：<span>2019/ 12 ~</span></dd>
+          <dd>個人開発の小規模なデータベースに利用。</dd>
+          <dd>簡単なサブクエリ,テーブル結合を行うSQL文が書ける。</dd>
         </dl>
-        <h2>開発ツール等</h2>
+        <h2>開発ツール,フレームワーク、その他</h2>
+        <div class="devIcons">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-linux-plain colored" style="color:rgb(9,105,203)"></i>
+          <i class="devicon-vuejs-plain-wordmark colored"></i>
+        </div>
         <dl>
           <dt>Git</dt>
-          <dd>基本的な使い方は理解している。CLIで使用。</dd>
-          <dt>bash</dt>
-          <dd>基本的なコマンドは使える。オプションは不自由。</dd>
-          <dd>間違っても<code>rm -rf /</code>やその変形を実行する事はない。</dd>
+          <dd>CLIでの基本的な使い方は理解している。</dd>
+          <dd>多人数での共同開発に用いた経験は無し。</dd>
           <dt>Linux</dt>
+          <dd>簡単なコマンドを使ってファイルの移動や複製、中身の確認などの操作が出来る。
           <dd>教材に沿ってUbuntu環境でVagrantを使った開発経験あり。CircleCI, Node.jsに触れた。</dd>
-          <dt>Vim</dt>
-          <dd><code>vimtutor</code>3章まで学習。</dd>
+          <dd>古いPCを調達してLinuxMintをブートしたので徐々に学習予定。</dd>
+          <dt>Vue.js</dt>
+          <dd>このポートフォリオを作るのに使用。</dd>
+          <dd>
+            <code>vue --version</code>
+            <code>@vue/cli 4.4.1</code>
+          </dd>
+          <dd><a href="https://github.com/kohjean/portfolio">GitHubリポジトリ</a></dd>
         </dl>
       </div>
     </div>
@@ -95,7 +116,6 @@
 </script>
 
 <style lang="scss" scoped>
-
 #carrer-header {
   @include sm {
     display: flex;
@@ -103,15 +123,21 @@
   }
 }
 
-dl {
-  width: 100%;
-
-  td:nth-child(2) {
+aside {
+  img {
+    width: 100%;
+  }
+  figcaption {
+    font-size: 12px;
     text-align: center;
   }
+  @include sm {
+    width: 30%;
 
-  dt {
-    border-bottom: 1px solid #264653;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
   }
 }
 
@@ -133,27 +159,53 @@ dl {
     margin: 0 auto;
   }
   @include md {
-    width: 40%;
-    
+    width: 40%; 
   }
 }
 
-aside {
-  img {
-    width: 100%;
-  }
-  figcaption {
-    font-size: 12px;
+#skill-set {
+  width: 90%;
+  margin: 0 auto;
+  .devIcons {
     text-align: center;
-  }
-  @include sm {
-    width: 30%;
-
-    img {
-      width: 100%;
-      border-radius: 10px;
+    font-size: 8rem;
+    @include md {
+      font-size: 12rem
+    }
+    i {
+      margin: 0 1rem;
     }
   }
+
+  h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  dl {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  dt {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e76f51e6;
+    padding-bottom: 0.8rem;
+    margin: 3rem 0 2rem; 
+    text-align: center;
+  }
+  dd {
+    padding: 1rem;
+  }
+  code {
+    width: 100%;
+    background-color: #eee;
+  }
+}
+
+.content-area {
+  padding-bottom: 3rem;
 }
 
 .content-area>div {

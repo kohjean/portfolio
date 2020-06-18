@@ -49,10 +49,6 @@
   article {
     padding-bottom: 5rem;
 
-    h1 {
-      text-align: center;
-    }
-
     h2 {
       padding: 0 2rem;
       margin: 1rem;
