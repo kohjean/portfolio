@@ -1,8 +1,8 @@
 <template>
-  <div id="carrer-component" class="component">
+  <div id="career-component" class="component">
     <h1>経歴 / スキル</h1>
     <div class="content-area">
-      <div id="carrer-header">
+      <div id="career-header">
         <table>
           <tr>
             <th>年</th>
@@ -96,6 +96,12 @@
         </dl>
       </div>
     </div>
+    <div class="contents-pagenation">
+      <ul>
+        <li @click="changeContent('Contact')">Contact</li>
+        <li @click="changeContent('Works')">Works</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -103,9 +109,16 @@
   import RadarChart from './RadarChart'
   import PieChart from './PieChart'
   export default {
-    name: 'ContentCarrer',
+    name: 'ContentCareer',
     data() {
       return {
+      content: String
+      }
+    },
+    methods: {
+      changeContent: function( content ) {
+        this.content = content;
+        this.$emit('change-content', content);
       }
     },
     components: {

@@ -117,3 +117,23 @@ header {
     color: #264653;
   }
 }
+
+.contents-pagenation ul {
+  display: flex;
+  justify-content: space-between;
+  li {
+    // background-color: cadetblue;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 2rem 1.2rem;
+    &:first-child::before {
+      padding-right: 6px;
+      content: '◀︎';
+    }
+    &:last-child::after {
+      padding-left: 6px;
+      content: '▶︎';
+    }
+  }
+}
