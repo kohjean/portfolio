@@ -15,7 +15,8 @@
     </section>
 
     <section id="main-contents">
-      <component :is="currentContent"></component>
+      <!-- コンポーネント内でchangeContentが起きた時にコンポーネントを切り替える -->
+      <component :is="currentContent" v-on:change-content="changeContent"></component>
     </section>
 
   </div>
@@ -25,7 +26,7 @@
   import ContentsNav from './components/TheContentNav'
   import ContentsSuggest from './components/ContentsSuggest'
   import Wait from './components/ContentWait'
-  import Carrer from './components/ContentCarrer'
+  import Career from './components/ContentCareer'
   import Works from './components/ContentWorks'
   import Contact from './components/ContentContact'
   export default {
@@ -34,13 +35,13 @@
       ContentsNav,
       ContentsSuggest,
       Wait,
-      Carrer,
+      Career,
       Works,
       Contact
     },
     data() {
       return {
-        latestDay: '2020 / 6/ 18',
+        latestDay: '2020 / 6/ 19',
         currentContent: 'Wait',
         suggestShow: false,
       }
@@ -60,7 +61,7 @@
       clickSmoothScroll: function() {
         event.preventDefault()
         this.$SmoothScroll(
-          document.querySelector('#suggest-section'),
+          document.getElementById('suggest-section'),
           800
         );
       }

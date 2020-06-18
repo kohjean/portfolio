@@ -1,9 +1,9 @@
 <template>
   <nav id="content-nav">
     <ul class="flex text-center">
-      <li @click="changeContent('Carrer')">
+      <li @click="changeContent('Career')">
         <i class="material-icons">assignment_ind</i>
-        <p>Carrer / Skill</p>
+        <p>Career / Skill</p>
       </li>
       <li @click="changeContent('Works')">
         <i class="material-icons">desktop_windows</i>

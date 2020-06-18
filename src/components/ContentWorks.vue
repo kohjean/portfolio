@@ -27,11 +27,27 @@
         <p><a href="https://github.com/kohjean/rememberCalclator">GitHub/kohjean</a></p>
       </article>
     </div>
+    <div class="contents-pagenation">
+      <ul>
+        <li @click="changeContent('Career')">Career</li>
+        <li @click="changeContent('Contact')">Contact</li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
   export default {
-
+    data() {
+      return {
+        content: String
+      }
+    },
+    methods: {
+      changeContent: function(content) {
+        this.content = content;
+        this.$emit('change-content', content);
+      }
+    },
   }
 </script>
 <style lang="scss" scoped>
