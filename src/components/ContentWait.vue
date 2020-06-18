@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-
+/* 
   .slide-enter-active,
   .slide-leave-active {
     will-change: transform;
@@ -30,5 +30,5 @@ export default {
   .slide-leave-to {
     transform: translateY(0);
     opacity: 0;
-  } 
+  }  */
 </style>
