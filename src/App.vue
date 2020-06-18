@@ -70,6 +70,7 @@
 </script>
 
 <style lang="scss">
+  @import url("https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css");
   @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
   @import "./assets/css/main";
   

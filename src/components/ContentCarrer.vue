@@ -38,6 +38,11 @@
       </div>
       <div id="skillset">
         <h2>フロントサイド</h2>
+        <div class="devIcons">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
         <dl>
           <dt>HTML5 & CSS3</dt>
           <dd>開発歴：<span>2019/ 4 ~</span></dd>
@@ -52,6 +57,10 @@
           <dd>コンソール画面が好き。</dd>
         </dl>
         <h2>サーバサイド</h2>
+        <div class="devIcons">
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-mysql-plain-wordmark colored"></i>
+        </div>
         <dl>
           <dt>PHP7</dt>
           <dd>開発歴：<span>2019/ 12 ~</span></dd>
@@ -61,7 +70,12 @@
           <dt>MySQL</dt>
           <dd>開発歴：<span>2019/ 12 ~</span></dd>
         </dl>
-        <h2>開発ツール等</h2>
+        <h2>開発ツール,フレームワーク</h2>
+        <div class="devIcons">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-jquery-plain-wordmark colored"></i>
+          <i class="devicon-vuejs-plain-wordmark colored"></i>
+        </div>
         <dl>
           <dt>Git</dt>
           <dd>基本的な使い方は理解している。CLIで使用。</dd>
@@ -153,6 +167,14 @@ aside {
       width: 100%;
       border-radius: 10px;
     }
+  }
+}
+
+.devIcons {
+  text-align: center;
+  font-size: 8rem;
+  i {
+    margin: 0 1rem;
   }
 }
 
