@@ -8,7 +8,7 @@
 gh-pages: <https://kohjean.github.io/portfolio>
 
 ## 年齢  
-27歳です。  
+27歳です。  g
 
 ## 希望する勤務地  
 京都です。  
