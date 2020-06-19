@@ -5,7 +5,7 @@
 絶賛求職中ですのでご覧になっている方の中に採用担当、並びに採用に関わりのある方がいらっしゃいましたら、一度採用についてご検討いただけると幸いです。  
 
 ## リンク
-[gh-pages]: https://kohjean.github.io/portfolio
+[gh-pages]: (https://kohjean.github.io/portfolio)
 
 ## 年齢  
 27歳です。  
