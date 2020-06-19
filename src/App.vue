@@ -41,7 +41,7 @@
     },
     data() {
       return {
-        latestDay: '2020 / 6/ 19',
+        latestDay: '2020 / 6/ 20',
         currentContent: 'Wait',
         suggestShow: false,
       }
