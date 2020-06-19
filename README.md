@@ -1,24 +1,23 @@
-# vuetest
+# 初めまして。見てくださってありがとうございます。 
 
-## Project setup
-```
-npm install
-```
+私はWebエンジニアを目指して日々勉強の毎日を送っています。  
+これは転職活動中に実績として作ったポートフォリオになります。  
+絶賛求職中ですのでご覧になっている方の中に採用担当、並びに採用に関わりのある方がいらっしゃいましたら、一度採用についてご検討いただけると幸いです。  
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## リンク
+[gh-pages]: https://kohjean.github.io/portfolio
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 年齢  
+27歳です。  
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 希望する勤務地  
+京都です。  
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 希望職種  
+サーバサイドエンジニアを希望しますが、与えられた仕事はなんでもします。  
+
+## 希望年収  
+ご相談させていただければと思います。  
+ 
+上記リンク先、ポートフォリオページにメールアドレス等記載してますので、気軽にご連絡ください。  
+
