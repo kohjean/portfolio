@@ -31,6 +31,7 @@ li {
 
 a {
   color: #2280fa;
+  text-decoration: none;
 }
 
 body {
@@ -106,7 +107,13 @@ header {
   }
 
   .content-area {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    h2 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
   }
   
   .component>h1 {
@@ -127,6 +134,7 @@ header {
     font-weight: bolder;
     cursor: pointer;
     padding: 2rem 1.2rem;
+    margin-bottom: 1.6rem;
     &:first-child::before {
       padding-right: 6px;
       content: '◀︎';
