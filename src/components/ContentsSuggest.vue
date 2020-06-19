@@ -18,9 +18,6 @@
         slide: false
       }
     },
-    // props: {
-    //   show: Boolean
-    // },
     mounted() {
       addEventListener('load', this.suggestMove);
       this.slide = true
