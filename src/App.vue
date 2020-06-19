@@ -8,15 +8,15 @@
         <span class="text-wrap">: {{ latestDay }}</span>
       </p>
     </header>
-    <ContentsNav v-on:change-content="changeContent"></ContentsNav>
+    
+    <ContentsNav v-on:change-content="changeContent" />
 
     <section id="suggest-section">
-      <ContentsSuggest v-show="suggestShow"></ContentsSuggest>
+      <ContentsSuggest v-show="suggestShow" />
     </section>
 
     <section id="main-contents">
-      <!-- コンポーネント内でchangeContentが起きた時にコンポーネントを切り替える -->
-      <component :is="currentContent" v-on:change-content="changeContent"></component>
+      <component :is="currentContent" v-on:change-content="changeContent" />
     </section>
 
   </div>
@@ -47,19 +47,21 @@
       }
     },
     created() {
+      // ロード時、コンテンツをfadeInさせる
       addEventListener('load', this.showSuggest);
     },
     methods: {
       showSuggest: function() {
         this.suggestShow = true
       },
+      // 表示するコンテンツの切り替え
       changeContent: function(content) {
         this.currentContent = content;
         this.suggestShow = false;
         this.clickSmoothScroll();
       },
+      // コンテンツの切り替え時、コンテンツトップまでスクロール
       clickSmoothScroll: function() {
-        event.preventDefault()
         this.$SmoothScroll(
           document.getElementById('suggest-section'),
           800

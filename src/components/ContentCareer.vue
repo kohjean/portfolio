@@ -3,28 +3,33 @@
     <h1>経歴 / スキル</h1>
     <div class="content-area">
       <div id="career-header">
-        <table>
-          <tr>
-            <th>年</th>
-            <th>月</th>
-            <th>職歴・学歴</th>
-          </tr>
-          <tr>
-            <td>2016</td>
-            <td>3</td>
-            <td>龍谷大学経済学部卒業</td>
-          </tr>
-          <tr>
-            <td>2016</td>
-            <td>4</td>
-            <td>京都市内の社会福祉法人にて3年半勤務</td>
-          </tr>
-          <tr>
-            <td>2019</td>
-            <td>10</td>
-            <td>職業訓練校でプログラミングを学ぶ</td>
-          </tr>
-        </table>
+        <div>
+          <h2>Hello World!</h2>
+          <p>1992年生まれ徳島県出身。18歳から京都在住。</p>
+          <p>京都は好きだけど暑くて寒いのがキライ。アウトドア派。</p>
+          <table>
+            <tr>
+              <th>年</th>
+              <th>月</th>
+              <th>職歴・学歴</th>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>3</td>
+              <td>龍谷大学経済学部卒業</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>4</td>
+              <td>京都市内の社会福祉法人にて3年半勤務</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>10</td>
+              <td>職業訓練校で6ヶ月間のWebプログラマー講座を受講</td>
+            </tr>
+          </table>
+        </div>
         <aside>
           <figure>
             <img src="img/nekoatsume.JPG" alt="私が酒蔵の縁側に座っている写真です。周りにphotoshopで合成した猫がたくさんいます。" />
@@ -49,7 +54,7 @@
           <dd></dd>
           <dd>セマンティクスを意識してコーディングしてます。</dd>
           <dd>レスポンシブデザインできます。</dd>
-          <dd>半年ほど前からはSCSSを使用。Bootstrap4も多少使用経験あり。</dd>
+          <dd>2020年の頭ぐらいからSCSSを使ってます。Bootstrap4も多少使用経験あります。</dd>
           <dt>JavaScript</dt>
           <dd>開発歴：<span>2019/ 4 ~</span></dd>
           <dd>学習初期からバニラjsとjQueryを併用しながら使用。</dd>
@@ -69,8 +74,8 @@
           <dd>画像のアップロード機能が作れます。</dd>
           <dt>MySQL</dt>
           <dd>開発歴：<span>2019/ 12 ~</span></dd>
-          <dd>個人開発の小規模なデータベースに利用。</dd>
-          <dd>簡単なサブクエリ,テーブル結合を行うSQL文が書ける。</dd>
+          <dd>個人開発の小規模なデータベースを構築しました。</dd>
+          <dd>簡単なサブクエリ,テーブル結合を行うSQL文まで書けます。</dd>
         </dl>
         <h2>開発ツール,フレームワーク、その他</h2>
         <div class="devIcons">
@@ -80,14 +85,14 @@
         </div>
         <dl>
           <dt>Git</dt>
-          <dd>CLIでの基本的な使い方は理解している。</dd>
-          <dd>多人数での共同開発に用いた経験は無し。</dd>
+          <dd>CLIベースでの基本的な使い方がわかります。</dd>
+          <dd>独学で利用していたので多人数での共同開発に用いた経験はありません。</dd>
           <dt>Linux</dt>
-          <dd>簡単なコマンドを使ってファイルの移動や複製、中身の確認などの操作が出来る。
-          <dd>教材に沿ってUbuntu環境でVagrantを使った開発経験あり。CircleCI, Node.jsに触れた。</dd>
-          <dd>古いPCを調達してLinuxMintをブートしたので徐々に学習予定。</dd>
+          <dd>簡単なコマンドを使ってファイルの移動や中身の確認、Vimを使って編集するなどの操作が出来ます。</dd>
+          <dd>教材に沿ってですがUbuntu環境でVagrantを使った開発も経験しました。同様の教材でCircleCI, Node.jsに触れました。苦手意識を持たないように普段から積極的に使用しています。</dd>
+          <dd>古いPCを調達してLinuxMintをブートしたので徐々に使っていこうと思ってます。</dd>
           <dt>Vue.js</dt>
-          <dd>このポートフォリオを作るのに使用。</dd>
+          <dd>このポートフォリオを作るのに使用しました。てこずりました。</dd>
           <dd>
             <code>vue --version</code>
             <code>@vue/cli 4.4.1</code>
@@ -129,11 +134,33 @@
 </script>
 
 <style lang="scss" scoped>
-#carrer-header {
-  @include sm {
+#career-header {
+  p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include md {
     display: flex;
     justify-content: space-around;
   }
+}
+
+table {
+  width: 90%;
+  margin: 2rem auto;
+
+  th:nth-child(2) {
+    text-align: center;
+    padding-right: 1rem;
+  }
+  td {
+    vertical-align: text-top;
+  }
+  td:nth-child(2) {
+    text-align: center;
+    padding-right: 1rem;
+  }
+  
 }
 
 aside {
@@ -144,7 +171,7 @@ aside {
     font-size: 12px;
     text-align: center;
   }
-  @include sm {
+  @include md {
     width: 30%;
 
     img {
@@ -190,12 +217,6 @@ aside {
     }
   }
 
-  h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
   dl {
     width: 100%;
     margin-bottom: 5rem;

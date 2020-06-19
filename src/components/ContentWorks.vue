@@ -12,7 +12,11 @@
         <p>公開されているWEBサイトに上書きする形でCSSを書き換え、"落書き"感覚でコードを共有できます。</p>
         <p>無論、元のサイトに影響はありません。書き換えはクライアント側でのみ起こります。</p>
         <p></p>
-        <p><a href="http://goingover.net">GoingOverCSS</a></p>
+        <p>
+          <a href="http://goingover.net" target="_blank">
+            GoingOverCSS
+          </a>
+        </p>
         <p>※PC環境向けです</p>
       </article>
       <article>
@@ -24,7 +28,11 @@
         <p>ユーザー登録機能を持った計算機です。</p>
         <p>自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。</p>
         <p>Ajax通信を勉強する用として作成しました。ページ遷移なくデータが追加されます。</p>
-        <p><a href="https://github.com/kohjean/rememberCalclator">GitHub/kohjean</a></p>
+        <p>
+          <a href="https://github.com/kohjean/rememberCalclator" target="_blank">
+            GitHub/kohjean
+          </a>
+        </p>
       </article>
     </div>
     <div class="contents-pagenation">
