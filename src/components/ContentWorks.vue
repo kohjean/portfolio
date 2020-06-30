@@ -8,10 +8,10 @@
           <img src="img/og-image.jpeg" />
         </div>
         <h2>詳細情報</h2>
-        <p>ユーザーのGitHubリポジトリに置かれたCSSファイルを登録し、CDN経由で配布します。</p>
-        <p>公開されているWEBサイトに上書きする形でCSSを書き換え、"落書き"感覚でコードを共有できます。</p>
-        <p>無論、元のサイトに影響はありません。書き換えはクライアント側でのみ起こります。</p>
-        <p></p>
+        <p>CSSファイルをCDNで配布,上書きしてサイトの見た目をハックします。</p>
+        <p>無論、書き換えはクライアント側でのみ起こるので、元のサイトに影響は与えません。</p>
+        <p>GitHubのリポジトリを活用し、コードを共有します。</p>
+        <p><strong>Going Over:</strong>上から絵を描くこと。</p>
         <p>
           <a href="http://goingover.net" target="_blank">
             GoingOverCSS
@@ -27,7 +27,7 @@
         <h2>詳細情報</h2>
         <p>ユーザー登録機能を持った計算機です。</p>
         <p>自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。</p>
-        <p>Ajax通信を勉強する用として作成しました。ページ遷移なくデータが追加されます。</p>
+        <p>Ajaxを勉強する用として作成しました。非同期通信を行い、ページ遷移なくデータが追加されます。</p>
         <p>
           <a href="https://github.com/kohjean/rememberCalclator" target="_blank">
             GitHub/kohjean
