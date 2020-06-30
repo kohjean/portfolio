@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .text-center {
   text-align: center;
 }
@@ -23,6 +24,11 @@ img {
 
 li {
   list-style: none;
+}
+
+a {
+  color: #2280fa;
+  text-decoration: none;
 }
 
 body {
@@ -96,10 +102,45 @@ header {
   border-radius: 10px;
 }
 
+#main-contents .content-area {
+  padding-bottom: 2rem;
+}
+
+#main-contents .content-area h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 #main-contents .component > h1 {
+  text-align: center;
   padding: 1.6rem;
   font-size: 1.6rem;
   font-weight: bolder;
   color: #264653;
+}
+
+.contents-pagenation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents-pagenation ul li {
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 2rem 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.contents-pagenation ul li:first-child::before {
+  padding-right: 6px;
+  content: '◀︎';
+}
+
+.contents-pagenation ul li:last-child::after {
+  padding-left: 6px;
+  content: '▶︎';
 }
 /*# sourceMappingURL=main.css.map */

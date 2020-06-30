@@ -6,7 +6,7 @@
         <div>
           <h2>Hello World!</h2>
           <p>1992年生まれ徳島県出身。18歳から京都在住。</p>
-          <p>京都は好きだけど暑くて寒いのがキライ。アウトドア派。</p>
+          <p>京都は好きだけど暑くて寒いところは苦手。アウトドア派。</p>
           <table>
             <tr>
               <th>年</th>
@@ -249,25 +249,5 @@ aside {
 .content-area>div:nth-child(2n) {
   background-color: #e3e3e3;
 }
-  // #overlay {
-  //   z-index: 99;
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-
-  //   #overlay-content {
-  //     z-index: 100;
-  //     width: 64%;
-
-  //     p {
-  //       background-color: #eee;
-  //     }
-  //   }
-  // }
+  
 </style>
