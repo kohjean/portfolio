@@ -1,4 +1,4 @@
-$main-color: #E9C46A;
+$main-color: #e9c46a;
 
 .text-center {
   text-align: center;
@@ -8,7 +8,7 @@ $main-color: #E9C46A;
   display: flex;
 }
 
-// base style CSS 
+// base style CSS
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -36,7 +36,7 @@ a {
 
 body {
   margin: 0;
-  background-color: #264653E3;
+  background-color: #264653e3;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,13 +57,14 @@ header {
 #what {
   font-family: Bernard MT Condensed;
   font-size: 5.6rem;
-  color: #2A9D8F;
-  text-shadow: 1px 3px #FF7777;
+  color: #2a9d8f;
+  text-shadow: 1px 3px #ff7777;
 }
 
 #who {
   padding-top: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #fff;
   font-size: 2.4rem;
   text-shadow: 0 2px #333;
@@ -77,7 +78,7 @@ header {
   font-size: 1.4rem;
   padding-top: 1rem;
   padding-right: 2.4rem;
-  color: #2A9D8F;
+  color: #2a9d8f;
 }
 
 .text-wrap {
@@ -85,7 +86,7 @@ header {
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-size: 7rem;
   color: $main-color;
   display: block;
@@ -93,14 +94,13 @@ header {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
-
 
 #main-contents {
   margin: 3rem 2rem 3rem;
   font-size: 1.6rem;
-  &>div {
+  & > div {
     width: 100%;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -109,14 +109,15 @@ header {
   .content-area {
     padding-bottom: 2rem;
     h2 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
       font-size: 1.8rem;
       text-align: center;
       margin-bottom: 1.5rem;
     }
   }
-  
-  .component>h1 {
+
+  .component > h1 {
     text-align: center;
     padding: 1.6rem;
     font-size: 1.6rem;
@@ -137,11 +138,11 @@ header {
     margin-bottom: 1.6rem;
     &:first-child::before {
       padding-right: 6px;
-      content: '◀︎';
+      content: "◀︎";
     }
     &:last-child::after {
       padding-left: 6px;
-      content: '▶︎';
+      content: "▶︎";
     }
   }
 }

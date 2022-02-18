@@ -32,7 +32,10 @@
         </div>
         <aside>
           <figure>
-            <img src="img/nekoatsume.JPG" alt="私が酒蔵の縁側に座っている写真です。周りにphotoshopで合成した猫がたくさんいます。" />
+            <img
+              src="img/nekoatsume.JPG"
+              alt="私が酒蔵の縁側に座っている写真です。周りにphotoshopで合成した猫がたくさんいます。"
+            />
             <figcaption>I like Neko.</figcaption>
           </figure>
         </aside>
@@ -54,11 +57,13 @@
           <dd></dd>
           <dd>セマンティクスを意識してコーディングしてます。</dd>
           <dd>レスポンシブデザインできます。</dd>
-          <dd>2020年の頭ぐらいからSCSSを使ってます。Bootstrap4も多少使用経験あります。</dd>
+          <dd>
+            2020年の頭ぐらいからSCSSを使ってます。Bootstrap4も多少使用経験あります。
+          </dd>
           <dt>JavaScript</dt>
           <dd>開発歴：<span>2019/ 4 ~</span></dd>
           <dd>学習初期からバニラjsとjQueryを併用しながら使用。</dd>
-          <dd>jQueryのajax通信で非同期処理を実装することができます。
+          <dd>jQueryのajax通信で非同期処理を実装することができます。</dd>
           <dd>コンソール画面が好き。</dd>
         </dl>
         <h2>サーバサイド</h2>
@@ -80,24 +85,38 @@
         <h2>開発ツール,フレームワーク、その他</h2>
         <div class="devIcons">
           <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-linux-plain colored" style="color:rgb(9,105,203)"></i>
+          <i
+            class="devicon-linux-plain colored"
+            style="color: rgb(9, 105, 203)"
+          ></i>
           <i class="devicon-vuejs-plain-wordmark colored"></i>
         </div>
         <dl>
           <dt>Git</dt>
           <dd>CLIベースでの基本的な使い方がわかります。</dd>
-          <dd>独学で利用していたので多人数での共同開発に用いた経験はありません。</dd>
+          <dd>
+            独学で利用していたので多人数での共同開発に用いた経験はありません。
+          </dd>
           <dt>Linux</dt>
-          <dd>簡単なコマンドを使ってファイルの移動や中身の確認、Vimを使って編集するなどの操作が出来ます。</dd>
-          <dd>教材に沿ってですがUbuntu環境でVagrantを使った開発も経験しました。同様の教材でCircleCI, Node.jsに触れました。苦手意識を持たないように普段から積極的に使用しています。</dd>
-          <dd>古いPCを調達してLinuxMintをブートしたので徐々に使っていこうと思ってます。</dd>
+          <dd>
+            簡単なコマンドを使ってファイルの移動や中身の確認、Vimを使って編集するなどの操作が出来ます。
+          </dd>
+          <dd>
+            教材に沿ってですがUbuntu環境でVagrantを使った開発も経験しました。同様の教材でCircleCI,
+            Node.jsに触れました。苦手意識を持たないように普段から積極的に使用しています。
+          </dd>
+          <dd>
+            古いPCを調達してLinuxMintをブートしたので徐々に使っていこうと思ってます。
+          </dd>
           <dt>Vue.js</dt>
           <dd>このポートフォリオを作るのに使用しました。てこずりました。</dd>
           <dd>
             <code>vue --version</code>
             <code>@vue/cli 4.4.1</code>
           </dd>
-          <dd><a href="https://github.com/kohjean/portfolio">GitHubリポジトリ</a></dd>
+          <dd>
+            <a href="https://github.com/kohjean/portfolio">GitHubリポジトリ</a>
+          </dd>
         </dl>
       </div>
     </div>
@@ -111,26 +130,26 @@
 </template>
 
 <script>
-  import RadarChart from './RadarChart'
-  import PieChart from './PieChart'
-  export default {
-    name: 'ContentCareer',
-    data() {
-      return {
-      content: String
-      }
+import RadarChart from "./RadarChart";
+import PieChart from "./PieChart";
+export default {
+  name: "ContentCareer",
+  data() {
+    return {
+      content: String,
+    };
+  },
+  methods: {
+    changeContent: function (content) {
+      this.content = content;
+      this.$emit("change-content", content);
     },
-    methods: {
-      changeContent: function( content ) {
-        this.content = content;
-        this.$emit('change-content', content);
-      }
-    },
-    components: {
-      RadarChart,
-      PieChart
-    }
-  }
+  },
+  components: {
+    RadarChart,
+    PieChart,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -160,7 +179,6 @@ table {
     text-align: center;
     padding-right: 1rem;
   }
-  
 }
 
 aside {
@@ -199,7 +217,7 @@ aside {
     margin: 0 auto;
   }
   @include md {
-    width: 40%; 
+    width: 40%;
   }
 }
 
@@ -210,7 +228,7 @@ aside {
     text-align: center;
     font-size: 8rem;
     @include md {
-      font-size: 12rem
+      font-size: 12rem;
     }
     i {
       margin: 0 1rem;
@@ -221,12 +239,12 @@ aside {
     width: 100%;
     margin-bottom: 5rem;
   }
-  
+
   dt {
     font-size: 1.8rem;
     border-bottom: 2px solid #e76f51e6;
     padding-bottom: 0.8rem;
-    margin: 3rem 0 2rem; 
+    margin: 3rem 0 2rem;
     text-align: center;
   }
   dd {
@@ -242,12 +260,11 @@ aside {
   padding-bottom: 3rem;
 }
 
-.content-area>div {
+.content-area > div {
   margin-bottom: 5rem;
 }
 
-.content-area>div:nth-child(2n) {
+.content-area > div:nth-child(2n) {
   background-color: #e3e3e3;
 }
-  
 </style>

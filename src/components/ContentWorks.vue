@@ -9,13 +9,13 @@
         </div>
         <h2>詳細情報</h2>
         <p>CSSファイルをCDNで配布,上書きしてサイトの見た目をハックします。</p>
-        <p>無論、書き換えはクライアント側でのみ起こるので、元のサイトに影響は与えません。</p>
+        <p>
+          無論、書き換えはクライアント側でのみ起こるので、元のサイトに影響は与えません。
+        </p>
         <p>GitHubのリポジトリを活用し、コードを共有します。</p>
         <p><strong>Going Over:</strong>上から絵を描くこと。</p>
         <p>
-          <a href="http://goingover.net" target="_blank">
-            GoingOverCSS
-          </a>
+          <a href="http://goingover.net" target="_blank"> GoingOverCSS </a>
         </p>
         <p>※PC環境向けです</p>
       </article>
@@ -26,10 +26,17 @@
         </div>
         <h2>詳細情報</h2>
         <p>ユーザー登録機能を持った計算機です。</p>
-        <p>自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。</p>
-        <p>Ajaxを勉強する用として作成しました。非同期通信を行い、ページ遷移なくデータが追加されます。</p>
         <p>
-          <a href="https://github.com/kohjean/rememberCalclator" target="_blank">
+          自分作ったラベル対して計算結果をデータベースに保存していくことが出来ます。
+        </p>
+        <p>
+          Ajaxを勉強する用として作成しました。非同期通信を行い、ページ遷移なくデータが追加されます。
+        </p>
+        <p>
+          <a
+            href="https://github.com/kohjean/rememberCalclator"
+            target="_blank"
+          >
             GitHub/kohjean
           </a>
         </p>
@@ -44,63 +51,62 @@
   </div>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        content: String
-      }
+export default {
+  data() {
+    return {
+      content: String,
+    };
+  },
+  methods: {
+    changeContent: function (content) {
+      this.content = content;
+      this.$emit("change-content", content);
     },
-    methods: {
-      changeContent: function(content) {
-        this.content = content;
-        this.$emit('change-content', content);
-      }
-    },
-  }
+  },
+};
 </script>
 <style lang="scss" scoped>
-  .content-area {
-    margin: 0 auto;
+.content-area {
+  margin: 0 auto;
 
-    @include sm {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      // padding: 1rem;
-    }
+  @include sm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // padding: 1rem;
+  }
+}
+
+article {
+  padding-bottom: 5rem;
+
+  h2 {
+    padding: 0 2rem;
+    margin: 1rem;
+    font-size: 1.8rem;
+    // text-align: left;
   }
 
-  article {
-    padding-bottom: 5rem;
+  p {
+    margin: 1rem;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+  }
 
-    h2 {
-      padding: 0 2rem;
-      margin: 1rem;
-      font-size: 1.8rem;
-      // text-align: left;
-    }
+  img {
+    width: 100%;
+  }
 
-    p {
-      margin: 1rem;
-      padding: 0 2rem;
-      font-size: 1.6rem;
-    }
+  @include sm {
+    width: 50%;
 
     img {
-      width: 100%;
-    }
-
-    @include sm {
-      width: 50%;
-
-      img {
-        width: 80%;
-
-      }
-    }
-
-    &:last-child {
-      justify-content: start;
+      width: 80%;
     }
   }
+
+  &:last-child {
+    justify-content: start;
+  }
+}
 </style>

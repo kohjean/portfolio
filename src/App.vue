@@ -8,7 +8,7 @@
         <span class="text-wrap">: {{ latestDay }}</span>
       </p>
     </header>
-    
+
     <ContentsNav v-on:change-content="changeContent" />
 
     <section id="suggest-section">
@@ -18,63 +18,57 @@
     <section id="main-contents">
       <component :is="currentContent" v-on:change-content="changeContent" />
     </section>
-
   </div>
 </template>
 
 <script>
-  import ContentsNav from './components/TheContentNav'
-  import ContentsSuggest from './components/ContentsSuggest'
-  import Wait from './components/ContentWait'
-  import Career from './components/ContentCareer'
-  import Works from './components/ContentWorks'
-  import Contact from './components/ContentContact'
-  export default {
-    name: 'App',
-    components: {
-      ContentsNav,
-      ContentsSuggest,
-      Wait,
-      Career,
-      Works,
-      Contact
+import ContentsNav from "./components/TheContentNav";
+import ContentsSuggest from "./components/ContentsSuggest";
+import Wait from "./components/ContentWait";
+import Career from "./components/ContentCareer";
+import Works from "./components/ContentWorks";
+import Contact from "./components/ContentContact";
+export default {
+  name: "App",
+  components: {
+    ContentsNav,
+    ContentsSuggest,
+    Wait,
+    Career,
+    Works,
+    Contact,
+  },
+  data() {
+    return {
+      latestDay: "2020 / 6/ 30",
+      currentContent: "Wait",
+      suggestShow: false,
+    };
+  },
+  created() {
+    // ロード時、コンテンツをfadeInさせる
+    addEventListener("load", this.showSuggest);
+  },
+  methods: {
+    showSuggest: function () {
+      this.suggestShow = true;
     },
-    data() {
-      return {
-        latestDay: '2020 / 6/ 30',
-        currentContent: 'Wait',
-        suggestShow: false,
-      }
+    // 表示するコンテンツの切り替え
+    changeContent: function (content) {
+      this.currentContent = content;
+      this.suggestShow = false;
+      this.clickSmoothScroll();
     },
-    created() {
-      // ロード時、コンテンツをfadeInさせる
-      addEventListener('load', this.showSuggest);
+    // コンテンツの切り替え時、コンテンツトップまでスクロール
+    clickSmoothScroll: function () {
+      this.$SmoothScroll(document.getElementById("suggest-section"), 800);
     },
-    methods: {
-      showSuggest: function() {
-        this.suggestShow = true
-      },
-      // 表示するコンテンツの切り替え
-      changeContent: function(content) {
-        this.currentContent = content;
-        this.suggestShow = false;
-        this.clickSmoothScroll();
-      },
-      // コンテンツの切り替え時、コンテンツトップまでスクロール
-      clickSmoothScroll: function() {
-        this.$SmoothScroll(
-          document.getElementById('suggest-section'),
-          800
-        );
-      }
-    }
-  }
-
+  },
+};
 </script>
 
 <style lang="scss">
-  @import url("https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css");
-  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-  @import "./assets/css/main";
-  
+@import url("https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "./assets/css/main";
 </style>

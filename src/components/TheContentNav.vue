@@ -22,20 +22,20 @@ export default {
   data() {
     return {
       show: true,
-      content: String
-    }
+      content: String,
+    };
   },
   methods: {
-    changeContent: function( content ) {
+    changeContent: function (content) {
       this.content = content;
-      this.$emit('change-content', content);
-    }
-  }
-}
+      this.$emit("change-content", content);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-$main-color: #E9C46A;
+$main-color: #e9c46a;
 nav {
   overflow-y: auto;
   height: 140px;
