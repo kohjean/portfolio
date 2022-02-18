@@ -1,15 +1,14 @@
 module.exports = {
-  publicPath: './',
-  outputDir: 'docs/', 
-  
+  publicPath: "./",
+  outputDir: "docs/",
+
   css: {
     loaderOptions: {
-      sass: { 
-        prependData: 
-        `
+      sass: {
+        prependData: `
           @import "@/assets/sass/_mixin.scss";
-        `
-      }
-    }
+        `,
+      },
+    },
   },
-}
+};
