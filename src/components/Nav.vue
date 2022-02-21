@@ -2,15 +2,15 @@
   <nav id="content-nav">
     <ul class="flex text-center">
       <li @click="changeContent('Career')">
-        <i class="material-icons">assignment_ind</i>
+        <i class="material-icons">&#xe85e;</i>
         <p>Career / Skill</p>
       </li>
       <li @click="changeContent('Works')">
-        <i class="material-icons">desktop_windows</i>
+        <i class="material-icons">&#xe30c;</i>
         <p>Works</p>
       </li>
       <li @click="changeContent('Contact')">
-        <i class="material-icons">question_answer</i>
+        <i class="material-icons">&#xe8af;</i>
         <p>Contact / Recruit</p>
       </li>
     </ul>
