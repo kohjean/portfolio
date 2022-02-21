@@ -40,7 +40,7 @@ export default {
   },
   data() {
     return {
-      latestDay: "2020 / 6/ 30",
+      latestDay: "2022 / 2/ 21",
       currentContent: "Wait",
       suggestShow: false,
     };
