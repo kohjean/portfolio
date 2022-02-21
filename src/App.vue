@@ -9,10 +9,10 @@
       </p>
     </header>
 
-    <ContentsNav v-on:change-content="changeContent" />
+    <Nav v-on:change-content="changeContent" />
 
     <section id="suggest-section">
-      <ContentsSuggest v-show="suggestShow" />
+      <Suggest v-show="suggestShow" />
     </section>
 
     <section id="main-contents">
@@ -22,17 +22,17 @@
 </template>
 
 <script>
-import ContentsNav from "./components/TheContentNav";
-import ContentsSuggest from "./components/ContentsSuggest";
+import Nav from "./components/Nav";
+import Suggest from "./components/Suggest";
 import Wait from "./components/ContentWait";
-import Career from "./components/ContentCareer";
-import Works from "./components/ContentWorks";
-import Contact from "./components/ContentContact";
+import Career from "./components/Career";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
 export default {
   name: "App",
   components: {
-    ContentsNav,
-    ContentsSuggest,
+    Nav,
+    Suggest,
     Wait,
     Career,
     Works,
