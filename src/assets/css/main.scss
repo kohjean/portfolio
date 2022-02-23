@@ -34,9 +34,10 @@ a {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   min-height: 100vh;
   background: linear-gradient(#264653e3,30%, #152b35e3);
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,7 +55,7 @@ header {
 }
 
 #what {
-  font-family: Bernard MT Condensed;
+  font-family: "Ubuntu", "Lobster", cursive;
   font-size: 5.6rem;
   color: #2a9d8f;
   text-shadow: 1px 3px #ff7777;
@@ -66,8 +67,6 @@ header {
 
 #who {
   padding-top: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   color: #fff;
   font-size: 2.4rem;
   text-shadow: 0 2px #333;
@@ -115,8 +114,6 @@ header {
   .content-area {
     padding-bottom: 2rem;
     h2 {
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
       font-size: 2rem;
       text-align: center;
     }

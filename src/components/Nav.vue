@@ -37,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 $main-color: #e9c46a;
 nav {
+  font-family: "Ubuntu", "Lobster", cursive;
   overflow-y: auto;
   height: 140px;
   padding: 2rem 0;
