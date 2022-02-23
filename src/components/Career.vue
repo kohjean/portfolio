@@ -6,7 +6,7 @@
         <div>
           <h2>Hello World!</h2>
           <p>1992年生まれ徳島県出身。18歳から京都在住。</p>
-          <p>京都は好きだけど暑くて寒いところは苦手。アウトドア派。</p>
+          <p>アウトドア派。スケートボード, キャンプが趣味。飲み物が好き。</p>
           <table>
             <tr>
               <th>年</th>
@@ -19,14 +19,24 @@
               <td>龍谷大学経済学部卒業</td>
             </tr>
             <tr>
-              <td>2016</td>
-              <td>4</td>
-              <td>京都市内の社会福祉法人にて3年半勤務</td>
-            </tr>
-            <tr>
               <td>2019</td>
               <td>10</td>
-              <td>職業訓練校で6ヶ月間のWebプログラマー講座を受講</td>
+              <td>京都市内の社会福祉法人にて3年半勤務のち退職</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>4</td>
+              <td>職業訓練校で6ヶ月間のWebプログラマー講座を受講終了</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>7</td>
+              <td>株式会社アペイロンにてプログラマーとして勤務</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>11</td>
+              <td>株式会社アペイロンを退職</td>
             </tr>
           </table>
         </div>
@@ -45,79 +55,46 @@
         <PieChart class="skill-graph" />
       </div>
       <div id="skill-set">
-        <h2>フロントサイド</h2>
+        <h2>フロントエンド</h2>
         <div class="devIcons">
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-sass-original colored"></i>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
+          />
+          <i class="devicon-react-original-wordmark colored"></i>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original-wordmark.svg"
+          />
         </div>
-        <dl>
-          <dt>HTML5 & CSS3</dt>
-          <dd>開発歴：<span>2019/ 4 ~</span></dd>
-          <dd></dd>
-          <dd>セマンティクスを意識してコーディングしてます。</dd>
-          <dd>レスポンシブデザインできます。</dd>
-          <dd>
-            2020年の頭ぐらいからSCSSを使ってます。Bootstrap4も多少使用経験あります。
-          </dd>
-          <dt>JavaScript</dt>
-          <dd>開発歴：<span>2019/ 4 ~</span></dd>
-          <dd>学習初期からバニラjsとjQueryを併用しながら使用。</dd>
-          <dd>jQueryのajax通信で非同期処理を実装することができます。</dd>
-          <dd>コンソール画面が好き。</dd>
-        </dl>
         <h2>サーバサイド</h2>
         <div class="devIcons">
-          <i class="devicon-php-plain colored"></i>
-          <i class="devicon-mysql-plain-wordmark colored"></i>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+          />
+          <i class="devicon-express-original-wordmark colored"></i>
         </div>
-        <dl>
-          <dt>PHP7</dt>
-          <dd>開発歴：<span>2019/ 12 ~</span></dd>
-          <dd>開発環境にはMAMPを使用しています。</dd>
-          <dd>ログイン認証機能が作れます。</dd>
-          <dd>画像のアップロード機能が作れます。</dd>
-          <dt>MySQL</dt>
-          <dd>開発歴：<span>2019/ 12 ~</span></dd>
-          <dd>個人開発の小規模なデータベースを構築しました。</dd>
-          <dd>簡単なサブクエリ,テーブル結合を行うSQL文まで書けます。</dd>
-        </dl>
-        <h2>開発ツール,フレームワーク、その他</h2>
+        <h2>クラウド</h2>
         <div class="devIcons">
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i
-            class="devicon-linux-plain colored"
-            style="color: rgb(9, 105, 203)"
-          ></i>
-          <i class="devicon-vuejs-plain-wordmark colored"></i>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+          />
+          <img src="../../public/img/netlify_logo_icon.png" />
         </div>
-        <dl>
-          <dt>Git</dt>
-          <dd>CLIベースでの基本的な使い方がわかります。</dd>
-          <dd>
-            独学で利用していたので多人数での共同開発に用いた経験はありません。
-          </dd>
-          <dt>Linux</dt>
-          <dd>
-            簡単なコマンドを使ってファイルの移動や中身の確認、Vimを使って編集するなどの操作が出来ます。
-          </dd>
-          <dd>
-            教材に沿ってですがUbuntu環境でVagrantを使った開発も経験しました。同様の教材でCircleCI,
-            Node.jsに触れました。苦手意識を持たないように普段から積極的に使用しています。
-          </dd>
-          <dd>
-            古いPCを調達してLinuxMintをブートしたので徐々に使っていこうと思ってます。
-          </dd>
-          <dt>Vue.js</dt>
-          <dd>このポートフォリオを作るのに使用しました。てこずりました。</dd>
-          <dd>
-            <code>vue --version</code>
-            <code>@vue/cli 4.4.1</code>
-          </dd>
-          <dd>
-            <a href="https://github.com/kohjean/portfolio">GitHubリポジトリ</a>
-          </dd>
-        </dl>
+        <h2>その他、ツール</h2>
+        <div class="devIcons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+          />
+        </div>
       </div>
     </div>
     <div class="contents-pagenation">

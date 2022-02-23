@@ -2,7 +2,6 @@
   <div id="container">
     <header>
       <h1 class="text-center" id="what">Portfolio</h1>
-      <h2 class="text-center" id="who">Koji Ishii</h2>
       <p id="when">
         <span class="text-wrap">Latest Update</span>
         <span class="text-wrap">: {{ latestDay }}</span>
