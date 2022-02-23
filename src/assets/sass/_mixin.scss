@@ -1,5 +1,5 @@
 @mixin sm {
-  @media (min-width: 479px) {
+  @media (min-width: 376px) {
     @content;
   }
 }
@@ -9,3 +9,10 @@
   }
 }
 
+@mixin lg {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+$main-color: #eec86c;

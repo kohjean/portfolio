@@ -69,5 +69,6 @@ export default {
 <style lang="scss">
 @import url("https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@1,700&display=swap');
 @import "./assets/css/main";
 </style>

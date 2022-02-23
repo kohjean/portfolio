@@ -69,17 +69,19 @@ export default {
 .content-area {
   margin: 0 auto;
 
-  @include sm {
+  @include md {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // padding: 1rem;
   }
 }
 
 article {
   padding-bottom: 5rem;
-
+  // h1 {
+  //   margin-bottom: 4px;
+  //   line-height: 3rem;
+  // }
   h2 {
     padding: 0 2rem;
     margin: 1rem;
@@ -92,14 +94,12 @@ article {
     padding: 0 2rem;
     font-size: 1.6rem;
   }
-
-  img {
-    width: 100%;
+  i {
+    font-size: 2rem;
   }
 
-  @include sm {
+  @include md {
     width: 50%;
-
     img {
       width: 80%;
     }

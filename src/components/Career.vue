@@ -131,48 +131,50 @@ export default {
 
 <style lang="scss" scoped>
 #career-header {
-  p {
+  p,
+  table {
     width: 90%;
+  }
+
+  p {
     margin: 0 auto;
   }
+  table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    th {
+      text-align: center;
+      border-bottom: 1px solid #999999;
+    }
+    td {
+      vertical-align: text-top;
+      &:nth-child(1),
+      &:nth-child(2) {
+        padding-right: 4px;
+      }
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+  }
+
+  aside {
+    figcaption {
+      font-size: 14px;
+      text-align: center;
+    }
+    @include md {
+      width: 30%;
+      img {
+        max-width: 380px;
+        border-radius: 10px;
+      }
+    }
+  }
+
   @include md {
     display: flex;
     justify-content: space-around;
-  }
-}
-
-table {
-  width: 90%;
-  margin: 2rem auto;
-
-  th:nth-child(2) {
-    text-align: center;
-    padding-right: 1rem;
-  }
-  td {
-    vertical-align: text-top;
-  }
-  td:nth-child(2) {
-    text-align: center;
-    padding-right: 1rem;
-  }
-}
-
-aside {
-  img {
-    width: 100%;
-  }
-  figcaption {
-    font-size: 14px;
-    text-align: center;
-  }
-  @include md {
-    width: 30%;
-
-    img {
-      width: 100%;
-      border-radius: 10px;
-    }
   }
 }
 
@@ -184,15 +186,10 @@ aside {
 
 .skill-graph {
   width: 80%;
+  max-width: 380px;
   margin: 0 auto;
   padding: 2rem 0 4rem;
 
-  @include sm {
-    display: block;
-    width: 50%;
-    max-width: 480px;
-    margin: 0 auto;
-  }
   @include md {
     width: 40%;
   }
@@ -201,19 +198,46 @@ aside {
 #skill-set {
   width: 90%;
   margin: 0 auto;
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+  @include md {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h2 {
+      border-bottom: 2px solid #264653e3;
+      color: #264653e3;
+    }
+    .block {
+      width: 48%;
+    }
+  }
+  @include lg {
+    .block {
+      width: 24%;
+    }
+  }
   .devIcons {
     text-align: center;
-    font-size: 8rem;
-    @include md {
-      font-size: 12rem;
+    overflow-wrap: break-word;
+    margin-bottom: 2rem;
+    * {
+      margin: 0 0.8rem;
     }
-    i {
-      margin: 0 1rem;
+    i,
+    img {
+      font-size: 100px;
+      width: 100px;
+      vertical-align: middle;
+      @include md {
+        font-size: 120px;
+        width: 120px;
+      }
     }
   }
 
   dl {
-    width: 100%;
     margin-bottom: 5rem;
   }
 

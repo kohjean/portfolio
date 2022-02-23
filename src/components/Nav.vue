@@ -11,7 +11,7 @@
       </li>
       <li @click="changeContent('Contact')">
         <i class="material-icons">&#xe8af;</i>
-        <p>Contact / Recruit</p>
+        <p>Contact</p>
       </li>
     </ul>
   </nav>
