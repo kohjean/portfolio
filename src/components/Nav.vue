@@ -2,16 +2,16 @@
   <nav id="content-nav">
     <ul class="flex text-center">
       <li @click="changeContent('Career')">
-        <i class="material-icons">assignment_ind</i>
+        <i class="material-icons">&#xe85e;</i>
         <p>Career / Skill</p>
       </li>
       <li @click="changeContent('Works')">
-        <i class="material-icons">desktop_windows</i>
+        <i class="material-icons">&#xef54;</i>
         <p>Works</p>
       </li>
-      <li @click="changeContent('Contact')">
-        <i class="material-icons">question_answer</i>
-        <p>Contact / Recruit</p>
+      <li @click="changeContent('Personal')">
+        <i class="material-icons">&#xe87c;</i>
+        <p>Personal</p>
       </li>
     </ul>
   </nav>
@@ -22,21 +22,22 @@ export default {
   data() {
     return {
       show: true,
-      content: String
-    }
+      content: String,
+    };
   },
   methods: {
-    changeContent: function( content ) {
+    changeContent: function (content) {
       this.content = content;
-      this.$emit('change-content', content);
-    }
-  }
-}
+      this.$emit("change-content", content);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-$main-color: #E9C46A;
+$main-color: #e9c46a;
 nav {
+  font-family: "Ubuntu", "Lobster", cursive;
   overflow-y: auto;
   height: 140px;
   padding: 2rem 0;
