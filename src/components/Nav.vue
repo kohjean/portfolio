@@ -9,9 +9,9 @@
         <i class="material-icons">&#xe30c;</i>
         <p>Works</p>
       </li>
-      <li @click="changeContent('Contact')">
-        <i class="material-icons">&#xe8af;</i>
-        <p>Contact</p>
+      <li @click="changeContent('Personal')">
+        <i class="material-icons">&#xe87c;</i>
+        <p>Personal</p>
       </li>
     </ul>
   </nav>

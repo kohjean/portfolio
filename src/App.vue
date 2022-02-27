@@ -26,7 +26,7 @@ import Suggest from "./components/Suggest";
 import Wait from "./components/ContentWait";
 import Career from "./components/Career";
 import Works from "./components/Works";
-import Contact from "./components/Contact";
+import Personal from "./components/Personal";
 export default {
   name: "App",
   components: {
@@ -35,7 +35,7 @@ export default {
     Wait,
     Career,
     Works,
-    Contact,
+    Personal,
   },
   data() {
     return {

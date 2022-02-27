@@ -45,7 +45,7 @@
     <div class="contents-pagenation">
       <ul>
         <li @click="changeContent('Career')">Career</li>
-        <li @click="changeContent('Contact')">Contact</li>
+        <li @click="changeContent('Personal')">Personal</li>
       </ul>
     </div>
   </div>

@@ -99,7 +99,7 @@
     </div>
     <div class="contents-pagenation">
       <ul>
-        <li @click="changeContent('Contact')">Contact</li>
+        <li @click="changeContent('Personal')">Personal</li>
         <li @click="changeContent('Works')">Works</li>
       </ul>
     </div>
