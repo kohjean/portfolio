@@ -6,7 +6,7 @@
         <p>Career / Skill</p>
       </li>
       <li @click="changeContent('Works')">
-        <i class="material-icons">&#xe30c;</i>
+        <i class="material-icons">&#xef54;</i>
         <p>Works</p>
       </li>
       <li @click="changeContent('Personal')">
