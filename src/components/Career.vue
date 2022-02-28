@@ -31,12 +31,12 @@
             <tr>
               <td>2020</td>
               <td>7</td>
-              <td>株式会社アペイロンにてプログラマーとして勤務</td>
+              <td>京都市内のシステム制作会社にてプログラマーとして勤務</td>
             </tr>
             <tr>
               <td>2021</td>
               <td>11</td>
-              <td>株式会社アペイロンを退職</td>
+              <td>システム制作会社を退職</td>
             </tr>
           </table>
         </div>
@@ -55,45 +55,56 @@
         <PieChart class="skill-graph" />
       </div>
       <div id="skill-set">
-        <h2>フロントエンド</h2>
-        <div class="devIcons">
-          <i class="devicon-sass-original colored"></i>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
-          />
-          <i class="devicon-react-original-wordmark colored"></i>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original-wordmark.svg"
-          />
+        <div class="block">
+          <h2>フロントエンド</h2>
+          <div class="devIcons">
+            <i class="devicon-sass-original colored"></i>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
+            />
+            <i class="devicon-react-original-wordmark colored"></i>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original-wordmark.svg"
+            />
+          </div>
         </div>
-        <h2>サーバサイド</h2>
-        <div class="devIcons">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-          />
-          <i class="devicon-express-original-wordmark colored"></i>
+        <div class="block">
+          <h2>サーバサイド</h2>
+          <div class="devIcons">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+            />
+            <i class="devicon-express-original-wordmark colored"></i>
+          </div>
         </div>
-        <h2>クラウド</h2>
-        <div class="devIcons">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-          />
-          <img src="../../public/img/netlify_logo_icon.png" />
+        <div class="block">
+          <h2>クラウド</h2>
+          <div class="devIcons">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            />
+            <img src="../../public/img/netlify_logo_icon.png" />
+          </div>
         </div>
-        <h2>その他、ツール</h2>
-        <div class="devIcons">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-          />
+        <div class="block">
+          <h2>その他, ツール等</h2>
+          <div class="devIcons">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+            />
+          </div>
         </div>
       </div>
     </div>
