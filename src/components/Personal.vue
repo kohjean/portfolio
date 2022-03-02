@@ -6,7 +6,7 @@
       <div class="item-container">
         <section>
           <p>Skateboard</p>
-          <div>
+          <div class="gif-flame">
             <img
               src="../../public/img/skate.gif"
               alt="スケートボードに乗って階段から飛び降りるgif。"
@@ -77,11 +77,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-h1,
-h2,
-h3,
-p {
-  margin: 0 1.6rem;
+h3 {
+  font-family: "Ubuntu", "Lobster", cursive;
+  font-size: 3.2rem;
+  margin-left: 1.6rem;
 }
 
 img {
@@ -99,8 +98,10 @@ section {
   margin: 2.4rem 0;
   & > p {
     font-size: 1.8rem;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 1.6rem;
     line-height: 1.6rem;
+    text-align: left;
+    font-weight: bold;
   }
 }
 
@@ -111,19 +112,27 @@ iframe {
 }
 
 @include md {
+  h3 {
+    display: inline-block;
+    border-bottom: 4px solid #c21500;
+    border-image: linear-gradient(to right, #c21500 0%, #ffc500 100%);
+    border-image-slice: 1;
+    margin-left: 6%;
+  }
   .item-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
     section {
-      width: 50%;
-      text-align: center;
-      margin-right: auto; // アイテム数が奇数の場合左寄せにする
-      img,
-      iframe {
-        width: 80%;
+      width: 46%;
+      padding: 0 4%;
+      margin: 3.2rem 2%;
+      & > p {
+        margin: 0.8rem 0;
       }
+    }
+    .gif-flame {
+      filter: drop-shadow(2px 4px 6px $main-black);
     }
   }
 }
