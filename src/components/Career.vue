@@ -31,12 +31,12 @@
             <tr>
               <td>2020</td>
               <td>7</td>
-              <td>京都市内のシステム制作会社にてプログラマーとして勤務</td>
+              <td>京都市内の開発会社にてプログラマーとして勤務</td>
             </tr>
             <tr>
               <td>2021</td>
               <td>11</td>
-              <td>システム制作会社を退職</td>
+              <td>開発会社を退職</td>
             </tr>
           </table>
         </div>
@@ -146,7 +146,6 @@ export default {
   table {
     width: 90%;
   }
-
   p {
     margin: 0 auto;
   }
@@ -200,7 +199,6 @@ export default {
   max-width: 380px;
   margin: 0 auto;
   padding: 2rem 0 4rem;
-
   @include md {
     width: 40%;
   }
@@ -247,11 +245,9 @@ export default {
       }
     }
   }
-
   dl {
     margin-bottom: 5rem;
   }
-
   dt {
     font-size: 1.8rem;
     border-bottom: 2px solid #e76f51e6;

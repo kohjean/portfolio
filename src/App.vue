@@ -2,10 +2,6 @@
   <div id="container">
     <header>
       <h1 class="text-center" id="what">Portfolio</h1>
-      <p id="when">
-        <span class="text-wrap">Latest Update</span>
-        <span class="text-wrap">: {{ latestDay }}</span>
-      </p>
     </header>
 
     <Nav v-on:change-content="changeContent" />
