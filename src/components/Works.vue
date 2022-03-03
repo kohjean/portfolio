@@ -2,10 +2,35 @@
   <div id="works-component" class="component">
     <h1 class="text-center">制作システム</h1>
     <div class="content-area">
-      <article>
+      <div class="block">
+        <div class="text-center">
+          <h1>Fishborn chart converter</h1>
+          <a
+            href="https://kohjean.github.io/markdown-to-fishborn-chart-converter/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="img/fishbornchart-converter.png" />
+          </a>
+        </div>
+        <h2>詳細情報</h2>
+        <p>マークダウンから特性要因図を作図します。</p>
+        <p>
+          <i class="devicon-github-original colored"></i>
+          <a
+            href="https://kohjean.github.io/markdown-to-fishborn-chart-converter/"
+            target="_blank"
+          >
+            Github Pages</a
+          >
+        </p>
+      </div>
+      <div class="block">
         <div class="text-center">
           <h1>Going Over CSS</h1>
-          <img src="img/og-image.jpeg" />
+          <a href="http://goingover.net" target="_blank">
+            <img src="img/og-image.jpeg" />
+          </a>
         </div>
         <h2>詳細情報</h2>
         <p>CSSファイルをCDNで配布,上書きしてサイトの見た目をハックします。</p>
@@ -18,10 +43,10 @@
           <a href="http://goingover.net" target="_blank"> GoingOverCSS </a>
         </p>
         <p>※PC環境向けです</p>
-      </article>
-      <article>
+      </div>
+      <div class="block">
         <div class="text-center">
-          <h1>リメンバー・カリキュレーター</h1>
+          <h1>記憶機能付き計算機</h1>
           <img src="img/remenber-calc.png" />
         </div>
         <h2>詳細情報</h2>
@@ -40,7 +65,20 @@
             GitHub/kohjean
           </a>
         </p>
-      </article>
+      </div>
+      <div class="block">
+        <div class="text-center">
+          <h1>Blog</h1>
+          <a href="https://full-push.com" target="_blank">
+            <img src="img/blog.png" />
+          </a>
+        </div>
+        <h2>詳細情報</h2>
+        <p>開発備忘録</p>
+        <p>
+          <a href="https://full-push.com" target="_blank"> full-push.com </a>
+        </p>
+      </div>
     </div>
     <div class="contents-pagenation">
       <ul>
@@ -76,17 +114,17 @@ export default {
   }
 }
 
-article {
+h1 {
+  line-height: 3rem;
+  margin-bottom: 4px;
+}
+
+.block {
   padding-bottom: 5rem;
-  // h1 {
-  //   margin-bottom: 4px;
-  //   line-height: 3rem;
-  // }
   h2 {
     padding: 0 2rem;
     margin: 1rem;
     font-size: 1.8rem;
-    // text-align: left;
   }
 
   p {
