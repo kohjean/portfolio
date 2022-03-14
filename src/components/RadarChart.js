@@ -4,7 +4,7 @@ export default {
   extends: Radar,
   data() {
     return {
-      datas: {
+      data: {
         labels: [
           "フロントエンド",
           "サーバサイド",
@@ -22,6 +22,7 @@ export default {
       },
       options: {
         responsive: true,
+        responsiveAnimationDuration: "500",
         legend: {
           labels: {
             boxWidth: 0,
@@ -48,6 +49,6 @@ export default {
     };
   },
   mounted() {
-    this.renderChart(this.datas, this.options);
+    this.renderChart(this.data, this.options);
   },
 };
