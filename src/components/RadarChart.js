@@ -4,7 +4,7 @@ export default {
   extends: Radar,
   data() {
     return {
-      datas: {
+      data: {
         labels: [
           "フロントエンド",
           "サーバサイド",
@@ -15,13 +15,14 @@ export default {
         datasets: [
           {
             data: [4, 3, 2, 4, 5],
-            backgroundColor: "#e76f5180",
+            backgroundColor: "rgba(231,111,81,0.6)",
             label: "",
           },
         ],
       },
       options: {
         responsive: true,
+        responsiveAnimationDuration: "500",
         legend: {
           labels: {
             boxWidth: 0,
@@ -48,6 +49,6 @@ export default {
     };
   },
   mounted() {
-    this.renderChart(this.datas, this.options);
+    this.renderChart(this.data, this.options);
   },
 };

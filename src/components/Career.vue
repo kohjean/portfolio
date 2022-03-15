@@ -52,7 +52,7 @@
       </div>
       <div id="charts">
         <RadarChart class="skill-graph" />
-        <PieChart class="skill-graph" />
+        <BubbleChart class="skill-graph" />
       </div>
       <div id="skill-set">
         <div class="block">
@@ -107,6 +107,10 @@
           </div>
         </div>
       </div>
+      <div class="github-grass">
+        <h2>GitHub Activity</h2>
+        <img src="https://grass-graph.appspot.com/images/kohjean.png" />
+      </div>
     </div>
     <div class="contents-pagenation">
       <ul>
@@ -119,7 +123,7 @@
 
 <script>
 import RadarChart from "./RadarChart";
-import PieChart from "./PieChart";
+import BubbleChart from './BubbleChart'
 export default {
   name: "ContentCareer",
   data() {
@@ -135,7 +139,7 @@ export default {
   },
   components: {
     RadarChart,
-    PieChart,
+    BubbleChart,
   },
 };
 </script>
@@ -262,6 +266,26 @@ export default {
     width: 100%;
     background-color: #eee;
   }
+}
+
+.github-grass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+  img {
+    width: 100%;
+    @include md {
+      width: 90%;
+    }
+  }
+}
+
+#skill-set,
+.github-grass {
+  padding: 2rem 0 4rem;
 }
 
 .content-area {

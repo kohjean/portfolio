@@ -4,7 +4,7 @@ export default {
   extends: Pie,
   data() {
     return {
-      datas: {
+      data: {
         labels: ["HTML", "CSS", "JavaScript", "PHP", "Others"],
         datasets: [
           {
@@ -28,6 +28,7 @@ export default {
       },
       options: {
         responsive: true,
+        responsiveAnimationDuration: "500",
         legend: {
           position: "right",
           labels: {
@@ -58,6 +59,6 @@ export default {
     };
   },
   mounted() {
-    this.renderChart(this.datas, this.options);
+    this.renderChart(this.data, this.options);
   },
 };
