@@ -21,7 +21,16 @@
             href="https://kohjean.github.io/markdown-to-fishborn-chart-converter/"
             target="_blank"
           >
-            Github Pages</a
+            Deploy Pages</a
+          >
+        </p>
+        <p>
+          <i class="devicon-github-original colored"></i>
+          <a
+            href="https://github.com/kohjean/markdown-to-fishborn-chart-converter"
+            target="_blank"
+          >
+            Repository</a
           >
         </p>
       </div>
