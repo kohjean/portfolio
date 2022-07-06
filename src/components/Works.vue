@@ -55,6 +55,34 @@
       </div>
       <div class="block">
         <div class="text-center">
+          <h1>Blog</h1>
+          <a href="https://full-push.com" target="_blank">
+            <img src="img/blog.png" />
+          </a>
+        </div>
+        <h2>詳細情報</h2>
+        <p>開発備忘録</p>
+        <p>
+          <a href="https://full-push.com" target="_blank"> full-push.com </a>
+        </p>
+      </div>
+      <div class="block">
+        <div class="text-center">
+          <h1>Sharm</h1>
+          <a href="https://hotel-sharm.com" target="_blank noopener">
+            <img src="img/sharm.png" />
+          </a>
+        </div>
+        <h2>詳細情報</h2>
+        <p>コミュニティでの共同開発</p>
+        <p>
+          <a href="https://hotel-sharm.com" target="_blank">
+            hotel-sharm.com
+          </a>
+        </p>
+      </div>
+      <div class="block">
+        <div class="text-center">
           <h1>記憶機能付き計算機</h1>
           <img src="img/remenber-calc.png" />
         </div>
@@ -73,19 +101,6 @@
           >
             GitHub/kohjean
           </a>
-        </p>
-      </div>
-      <div class="block">
-        <div class="text-center">
-          <h1>Blog</h1>
-          <a href="https://full-push.com" target="_blank">
-            <img src="img/blog.png" />
-          </a>
-        </div>
-        <h2>詳細情報</h2>
-        <p>開発備忘録</p>
-        <p>
-          <a href="https://full-push.com" target="_blank"> full-push.com </a>
         </p>
       </div>
     </div>
@@ -107,7 +122,7 @@ export default {
   methods: {
     changeContent: function (content) {
       this.content = content;
-      this.$emit("change-content", content);
+      this.$emit('change-content', content);
     },
   },
 };
@@ -144,7 +159,10 @@ h1 {
   i {
     font-size: 2rem;
   }
-
+  img {
+    object-fit: contain;
+    max-height: 500px;
+  }
   @include md {
     width: 50%;
     img {
