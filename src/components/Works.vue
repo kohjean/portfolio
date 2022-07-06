@@ -33,6 +33,7 @@
             Repository</a
           >
         </p>
+        <DevBadges :srcset="md2fbc" />
       </div>
       <div class="block">
         <div class="text-center">
@@ -52,6 +53,7 @@
           <a href="http://goingover.net" target="_blank"> GoingOverCSS </a>
         </p>
         <p>※PC環境向けです</p>
+        <DevBadges :srcset="goingOver" />
       </div>
       <div class="block">
         <div class="text-center">
@@ -65,6 +67,7 @@
         <p>
           <a href="https://full-push.com" target="_blank"> full-push.com </a>
         </p>
+        <DevBadges :srcset="fullpush" />
       </div>
       <div class="block">
         <div class="text-center">
@@ -80,6 +83,7 @@
             hotel-sharm.com
           </a>
         </p>
+        <DevBadges :srcset="sharm" />
       </div>
       <div class="block">
         <div class="text-center">
@@ -102,6 +106,7 @@
             GitHub/kohjean
           </a>
         </p>
+        <DevBadges :srcset="rememberCalc" />
       </div>
     </div>
     <div class="contents-pagenation">
@@ -113,10 +118,39 @@
   </div>
 </template>
 <script>
+import DevBadges from './DevBadges.vue';
 export default {
+  components: { DevBadges },
   data() {
     return {
       content: String,
+      md2fbc: [
+        'https://img.shields.io/badge/%20-React-282C34?style=flat-square&logo=react&logoColor=5ED3F3',
+      ],
+      goingOver: [
+        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white',
+        'https://img.shields.io/badge/-EC2-FF9900?style=flat-square&logo=AmazonEC2&logoColor=white',
+        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white',
+        'https://img.shields.io/badge/-MySQL-42759C?style=flat-square&logo=MySQL&logoColor=white',
+        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=white',
+      ],
+      fullpush: [
+        'https://img.shields.io/badge/-Gatsby-663399?style=flat-square&logo=Gatsby&logoColor=white',
+        'https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=282C34',
+        'https://img.shields.io/badge/-Lambda-FF9900?style=flat-square&logo=AWSLambda&logoColor=282C34',
+        'https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=AmazonDynamoDB&logoColor=white',
+        'https://img.shields.io/badge/-API Gateway-D2A23F?style=flat-square&logo=AmazonAPIGateway&logoColor=282C34',
+      ],
+      sharm: [
+        'https://img.shields.io/badge/%20-React-282C34?style=flat-square&logo=react&logoColor=5ED3F3',
+        'https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white',
+      ],
+      rememberCalc: [
+        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white',
+        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white',
+        'https://img.shields.io/badge/-MySQL-42759C?style=flat-square&logo=MySQL&logoColor=white',
+        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=white',
+      ],
     };
   },
   methods: {
