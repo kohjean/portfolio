@@ -1,5 +1,5 @@
-import { Bubble } from "vue-chartjs";
-import chartjsPluginDatalabels from "chartjs-plugin-datalabels";
+import { Bubble } from 'vue-chartjs';
+import chartjsPluginDatalabels from 'chartjs-plugin-datalabels';
 
 export default {
   extends: Bubble,
@@ -8,8 +8,8 @@ export default {
       data: {
         datasets: [
           {
-            label: "フロント",
-            backgroundColor: "rgba(255,221,50,0.6)",
+            label: 'フロント',
+            backgroundColor: 'rgba(255,221,50,0.6)',
             data: [
               {
                 x: 90,
@@ -19,8 +19,8 @@ export default {
             ],
           },
           {
-            label: "サーバサイド",
-            backgroundColor: "rgba(31,151,252,0.6)",
+            label: 'サーバサイド',
+            backgroundColor: 'rgba(31,151,252,0.6)',
             data: [
               {
                 x: 40,
@@ -30,8 +30,8 @@ export default {
             ],
           },
           {
-            label: "インフラ",
-            backgroundColor: "rgba(231,111,81,0.6)",
+            label: 'インフラ',
+            backgroundColor: 'rgba(231,111,81,0.6)',
             data: [
               {
                 x: -10,
@@ -41,8 +41,8 @@ export default {
             ],
           },
           {
-            label: "デザイン",
-            backgroundColor: "rgba(56,163,165,0.6)",
+            label: 'デザイン',
+            backgroundColor: 'rgba(56,163,165,0.6)',
             data: [
               {
                 x: 80,
@@ -52,8 +52,8 @@ export default {
             ],
           },
           {
-            label: "モバイルアプリ",
-            backgroundColor: "rgba(11,246,116,0.6)",
+            label: 'モバイルアプリ',
+            backgroundColor: 'rgba(11,246,116,0.6)',
             data: [
               {
                 x: 55,
@@ -63,8 +63,8 @@ export default {
             ],
           },
           {
-            label: "AI",
-            backgroundColor: "rgba(33,158,188,0.6)",
+            label: 'AI',
+            backgroundColor: 'rgba(33,158,188,0.6)',
             data: [
               {
                 x: -50,
@@ -74,8 +74,8 @@ export default {
             ],
           },
           {
-            label: "AR/VR",
-            backgroundColor: "rgba(247,36,133,0.6)",
+            label: 'AR/VR',
+            backgroundColor: 'rgba(247,36,133,0.6)',
             data: [
               {
                 x: 35,
@@ -85,8 +85,8 @@ export default {
             ],
           },
           {
-            label: "UI/UX",
-            backgroundColor: "rgba(255,51,40,0.6)",
+            label: 'UI/UX',
+            backgroundColor: 'rgba(255,51,40,0.6)',
             data: [
               {
                 x: 90,
@@ -101,8 +101,8 @@ export default {
         responsive: true,
         title: {
           display: true,
-          text: "関心と経験",
-          position: "top",
+          text: '関心と経験',
+          position: 'top',
           padding: 20,
           fontSize: 16,
         },
@@ -110,7 +110,7 @@ export default {
           // display: false,
           labels: {
             boxWidth: 12,
-          }
+          },
         },
         scales: {
           xAxes: [
@@ -122,12 +122,12 @@ export default {
               },
               scaleLabel: {
                 display: true,
-                labelString: "経験ある",
-                fontColor: "#7E7E7E",
-                fontFamily: "sans-serif",
+                labelString: '経験ある',
+                fontColor: '#7E7E7E',
+                fontFamily: 'sans-serif',
                 fontSize: 16,
               },
-              position: "top",
+              position: 'top',
             },
           ],
           yAxes: [
@@ -139,12 +139,12 @@ export default {
               },
               scaleLabel: {
                 display: true,
-                labelString: "関心ある",
-                fontColor: "#7E7E7E",
-                fontFamily: "sans-serif",
+                labelString: '関心ある',
+                fontColor: '#7E7E7E',
+                fontFamily: 'sans-serif',
                 fontSize: 16,
               },
-              position: "right",
+              position: 'right',
             },
           ],
         },

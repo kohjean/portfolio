@@ -122,10 +122,10 @@
 </template>
 
 <script>
-import RadarChart from "./RadarChart";
-import BubbleChart from './BubbleChart'
+import RadarChart from './RadarChart';
+import BubbleChart from './BubbleChart';
 export default {
-  name: "ContentCareer",
+  name: 'ContentCareer',
   data() {
     return {
       content: String,
@@ -134,7 +134,7 @@ export default {
   methods: {
     changeContent: function (content) {
       this.content = content;
-      this.$emit("change-content", content);
+      this.$emit('change-content', content);
     },
   },
   components: {
