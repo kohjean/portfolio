@@ -123,7 +123,7 @@ export default {
   components: { DevBadges },
   data() {
     return {
-      content: String,
+      content: Array,
       md2fbc: [
         'https://img.shields.io/badge/%20-React-282C34?style=flat-square&logo=react&logoColor=5ED3F3',
       ],

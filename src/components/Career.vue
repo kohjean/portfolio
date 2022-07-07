@@ -134,7 +134,7 @@ export default {
   methods: {
     changeContent: function (content) {
       this.content = content;
-      this.$emit("change-content", content);
+      this.$emit('change-content', content);
     },
   },
   components: {
