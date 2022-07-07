@@ -123,33 +123,34 @@ export default {
   components: { DevBadges },
   data() {
     return {
-      content: String,
+      content: Array,
       md2fbc: [
         'https://img.shields.io/badge/%20-React-282C34?style=flat-square&logo=react&logoColor=5ED3F3',
+        'https://img.shields.io/badge/%20-MUI-081A2F?style=flat-square&logo=MUI&logoColor=007FFF',
       ],
       goingOver: [
-        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white',
-        'https://img.shields.io/badge/-EC2-FF9900?style=flat-square&logo=AmazonEC2&logoColor=white',
-        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white',
+        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=78CFF5',
+        'https://img.shields.io/badge/-EC2-FF9900?style=flat-square&logo=AmazonEC2&logoColor=black',
+        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=812D72',
         'https://img.shields.io/badge/-MySQL-42759C?style=flat-square&logo=MySQL&logoColor=white',
-        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=white',
+        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=23252F',
       ],
       fullpush: [
         'https://img.shields.io/badge/-Gatsby-663399?style=flat-square&logo=Gatsby&logoColor=white',
-        'https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=282C34',
+        'https://img.shields.io/badge/-Netlify-070B0D?style=flat-square&logo=netlify&logoColor=3EB0BB',
         'https://img.shields.io/badge/-Lambda-FF9900?style=flat-square&logo=AWSLambda&logoColor=282C34',
-        'https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=AmazonDynamoDB&logoColor=white',
+        'https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=AmazonDynamoDB&logoColor=black',
         'https://img.shields.io/badge/-API Gateway-D2A23F?style=flat-square&logo=AmazonAPIGateway&logoColor=282C34',
       ],
       sharm: [
         'https://img.shields.io/badge/%20-React-282C34?style=flat-square&logo=react&logoColor=5ED3F3',
-        'https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white',
+        'https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=FF9900',
       ],
       rememberCalc: [
-        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white',
-        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white',
+        'https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=78CFF5',
+        'https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=812D72',
         'https://img.shields.io/badge/-MySQL-42759C?style=flat-square&logo=MySQL&logoColor=white',
-        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=white',
+        'https://img.shields.io/badge/-PHP-7377AD?style=flat-square&logo=PHP&logoColor=23252F',
       ],
     };
   },
@@ -175,7 +176,7 @@ export default {
     @include md {
       width: 50%;
     }
-    
+
     h1 {
       line-height: 3rem;
       margin-bottom: 4px;
