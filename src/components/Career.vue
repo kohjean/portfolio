@@ -89,7 +89,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
             />
-            <img src="../../public/img/netlify_logo_icon.png" />
+            <img src="/img/netlify_logo_icon.png" />
           </div>
         </div>
         <div class="block">
@@ -122,8 +122,8 @@
 </template>
 
 <script>
-import RadarChart from './RadarChart';
-import BubbleChart from './BubbleChart';
+import RadarChart from '@/components/RadarChart';
+import BubbleChart from '@/components/BubbleChart';
 export default {
   name: 'ContentCareer',
   data() {
@@ -134,7 +134,7 @@ export default {
   methods: {
     changeContent: function (content) {
       this.content = content;
-      this.$emit('change-content', content);
+      this.$emit("change-content", content);
     },
   },
   components: {

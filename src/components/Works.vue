@@ -118,7 +118,7 @@
   </div>
 </template>
 <script>
-import DevBadges from './DevBadges.vue';
+import DevBadges from '@/components/DevBadges.vue';
 export default {
   components: { DevBadges },
   data() {
@@ -175,7 +175,7 @@ export default {
     @include md {
       width: 50%;
     }
-    
+
     h1 {
       line-height: 3rem;
       margin-bottom: 4px;
