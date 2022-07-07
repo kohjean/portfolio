@@ -89,7 +89,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
             />
-            <img src="../../public/img/netlify_logo_icon.png" />
+            <img src="/img/netlify_logo_icon.png" />
           </div>
         </div>
         <div class="block">

@@ -8,7 +8,7 @@
           <p>Skateboard</p>
           <div class="gif-flame">
             <img
-              src="../../public/img/skate.gif"
+              src="/img/skate.gif"
               alt="スケートボードに乗って階段から飛び降りるgif。"
             />
           </div>
@@ -24,13 +24,13 @@
         <section>
           <p>Bonfire</p>
           <img
-            src="../../public/img/atsukan.jpg"
+            src="/img/atsukan.jpg"
             alt="キャンプをした時の写真。徳利を湯煎する様子。"
           />
         </section>
         <section>
           <p>Develop in Garage</p>
-          <img src="../../public/img/develop_warehouse.png" />
+          <img src="/img/develop_warehouse.png" />
         </section>
       </div>
 
@@ -40,7 +40,7 @@
           <p>Gamushara</p>
           <figure>
             <img
-              src="../../public/img/when-i-was-kid.jpg"
+              src="/img/when-i-was-kid.jpg"
               alt="作成者が幼稚園生の頃の写真。運動会で綱引きをしている様子"
             />
             <figcaption class="text-center">
@@ -48,7 +48,7 @@
             </figcaption>
           </figure>
           <div id="stamp">
-            <img src="../../public/img/stamp.png" />
+            <img src="/img/stamp.png" />
           </div>
         </section>
       </div>
