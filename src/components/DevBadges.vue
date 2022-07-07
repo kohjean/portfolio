@@ -23,9 +23,10 @@ export default {
   ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 1px;
   }
   img {
-    height: 3.2rem;
+    height: 2.8rem;
   }
 }
 </style>

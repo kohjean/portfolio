@@ -164,48 +164,40 @@ export default {
 <style lang="scss" scoped>
 .content-area {
   margin: 0 auto;
-
   @include md {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-}
 
-h1 {
-  line-height: 3rem;
-  margin-bottom: 4px;
-}
-
-.block {
-  padding-bottom: 5rem;
-  h2 {
-    padding: 0 2rem;
-    margin: 1rem;
-    font-size: 1.8rem;
-  }
-
-  p {
-    margin: 1rem;
-    padding: 0 2rem;
-    font-size: 1.6rem;
-  }
-  i {
-    font-size: 2rem;
-  }
-  img {
-    object-fit: contain;
-    max-height: 500px;
-  }
-  @include md {
-    width: 50%;
-    img {
-      width: 80%;
+  .block {
+    padding: 1rem 5% 5rem;
+    @include md {
+      width: 50%;
     }
-  }
-
-  &:last-child {
-    justify-content: start;
+    
+    h1 {
+      line-height: 3rem;
+      margin-bottom: 4px;
+    }
+    h2 {
+      padding: 0 2rem;
+      margin: 1rem;
+      font-size: 1.8rem;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    i {
+      font-size: 2rem;
+    }
+    img {
+      object-fit: contain;
+      max-height: 500px;
+    }
+    &:last-child {
+      justify-content: start;
+    }
   }
 }
 </style>
