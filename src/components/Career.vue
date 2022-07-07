@@ -122,8 +122,8 @@
 </template>
 
 <script>
-import RadarChart from './RadarChart';
-import BubbleChart from './BubbleChart';
+import RadarChart from '@/components/RadarChart';
+import BubbleChart from '@/components/BubbleChart';
 export default {
   name: 'ContentCareer',
   data() {

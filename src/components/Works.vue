@@ -10,7 +10,7 @@
             target="_blank"
             rel="noopener"
           >
-            <img src="img/fishbornchart-converter.png" />
+            <img src="../../public/img/fishbornchart-converter.png" />
           </a>
         </div>
         <h2>詳細情報</h2>
@@ -39,7 +39,7 @@
         <div class="text-center">
           <h1>Going Over CSS</h1>
           <a href="http://goingover.net" target="_blank">
-            <img src="img/og-image.jpeg" />
+            <img src="../../public/img/og-image.jpeg" />
           </a>
         </div>
         <h2>詳細情報</h2>
@@ -59,7 +59,7 @@
         <div class="text-center">
           <h1>Blog</h1>
           <a href="https://full-push.com" target="_blank">
-            <img src="img/blog.png" />
+            <img src="../../public/img/blog.png" />
           </a>
         </div>
         <h2>詳細情報</h2>
@@ -73,7 +73,7 @@
         <div class="text-center">
           <h1>Sharm</h1>
           <a href="https://hotel-sharm.com" target="_blank noopener">
-            <img src="img/sharm.png" />
+            <img src="../../public/img/sharm.png" />
           </a>
         </div>
         <h2>詳細情報</h2>
@@ -88,7 +88,7 @@
       <div class="block">
         <div class="text-center">
           <h1>記憶機能付き計算機</h1>
-          <img src="img/remenber-calc.png" />
+          <img src="../../public/img/remenber-calc.png" />
         </div>
         <h2>詳細情報</h2>
         <p>ユーザー登録機能を持った計算機です。</p>
@@ -118,7 +118,7 @@
   </div>
 </template>
 <script>
-import DevBadges from './DevBadges.vue';
+import DevBadges from '@/components/DevBadges.vue';
 export default {
   components: { DevBadges },
   data() {
