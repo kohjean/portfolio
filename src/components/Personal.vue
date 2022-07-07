@@ -71,14 +71,14 @@ export default {
   methods: {
     changeContent: function (content) {
       this.content = content;
-      this.$emit("change-content", content);
+      this.$emit('change-content', content);
     },
   },
 };
 </script>
 <style lang="scss" scoped>
 h3 {
-  font-family: "Ubuntu", "Lobster", cursive;
+  font-family: 'Ubuntu', 'Lobster', cursive;
   font-size: 3.2rem;
   margin-left: 1.6rem;
 }

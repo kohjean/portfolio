@@ -21,14 +21,15 @@
 </template>
 
 <script>
-import Nav from "./components/Nav";
-import Suggest from "./components/Suggest";
-import Wait from "./components/ContentWait";
-import Career from "./components/Career";
-import Works from "./components/Works";
-import Personal from "./components/Personal";
+import Nav from '@/components/Nav';
+import Suggest from '@/components/Suggest';
+import Wait from '@/components/ContentWait';
+import Career from '@/components/Career';
+import Works from '@/components/Works';
+import Personal from '@/components/Personal';
+import DevBadges from '@/components/DevBadges';
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Nav,
     Suggest,
@@ -36,17 +37,18 @@ export default {
     Career,
     Works,
     Personal,
+    DevBadges,
   },
   data() {
     return {
       latestYear: new Date().getFullYear(),
-      currentContent: "Wait",
+      currentContent: 'Wait',
       suggestShow: false,
     };
   },
   created() {
     // ロード時、コンテンツをfadeInさせる
-    addEventListener("load", this.showSuggest);
+    addEventListener('load', this.showSuggest);
   },
   methods: {
     showSuggest: function () {
@@ -60,15 +62,15 @@ export default {
     },
     // コンテンツの切り替え時、コンテンツトップまでスクロール
     clickSmoothScroll: function () {
-      this.$SmoothScroll(document.getElementById("suggest-section"), 800);
+      this.$SmoothScroll(document.getElementById('suggest-section'), 800);
     },
   },
 };
 </script>
 
 <style lang="scss">
-@import url("https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@1,700&display=swap");
-@import "./assets/css/main";
+@import url('https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@1,700&display=swap');
+@import './assets/css/main';
 </style>

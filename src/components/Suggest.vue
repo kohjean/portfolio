@@ -20,21 +20,21 @@
 export default {
   data() {
     return {
-      icon: "keyboard_arrow_up",
+      icon: 'keyboard_arrow_up',
       slide: false,
     };
   },
   mounted() {
-    addEventListener("load", this.suggestMove);
+    addEventListener('load', this.suggestMove);
     this.slide = true;
   },
   methods: {
     suggestMove: function () {
-      const suggest = document.getElementById("suggestIcons");
-      const icons = suggest.getElementsByClassName("material-icons");
+      const suggest = document.getElementById('suggestIcons');
+      const icons = suggest.getElementsByClassName('material-icons');
       setTimeout(function () {
         for (let i = 0; i < icons.length; i++) {
-          icons[i].style.transform = "translateY(-3rem)";
+          icons[i].style.transform = 'translateY(-3rem)';
           icons[i].style.opacity = 1;
         }
       }, 1200);
